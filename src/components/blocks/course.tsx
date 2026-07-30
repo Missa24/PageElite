@@ -12,31 +12,45 @@ interface Curso {
 const cursos: Curso[] = [
   {
     numero: "01",
+    titulo: "Nuestras Especialidades",
+    descripcion:
+      "Formación profesional en áreas de belleza y estética con técnicas actualizadas, prácticas especializadas y enfoque integral para desarrollar tus habilidades.",
+    enlace: "/cursos/especialidades",
+  },
+  {
+    numero: "02",
     titulo: "Cursos Faciales",
     descripcion:
       "Capacitación en técnicas avanzadas de tratamientos faciales: exfoliaciones, rejuvenecimiento, acné, manchas y signos de envejecimiento con las últimas tecnologías.",
     enlace: "/cursos/faciales",
   },
   {
-    numero: "02",
+    numero: "03",
     titulo: "Cursos Corporales",
     descripcion:
       "Drenaje linfático, depilación, masajes reductores y corporales. Con enfoque práctico y profesional para mejorar la salud y apariencia de la piel y el cuerpo.",
     enlace: "/cursos/corporales",
   },
   {
-    numero: "03",
+    numero: "04",
     titulo: "Cursos Maquillaje",
     descripcion:
       "Desde correcciones faciales hasta efectos especiales y maquillaje editorial. Crea looks artísticos, editoriales y fotográficos en cualquier contexto profesional.",
     enlace: "/cursos/maquillaje",
   },
   {
-    numero: "04",
+    numero: "05",
     titulo: "Cursos Cejas y Pestañas",
     descripcion:
       "Extensión de pestañas, lifting y diseño con tinte y henna. Crea looks personalizados y duraderos adaptados a cada cliente.",
     enlace: "/cursos/cejas-pestanas",
+  },
+  {
+    numero: "06",
+    titulo: "Cursos Estética Integral",
+    descripcion:
+      "Aprende técnicas combinadas de estética facial y corporal para ofrecer tratamientos completos, mejorar tus servicios y crecer profesionalmente.",
+    enlace: "/cursos/estetica-integral",
   },
 ];
 
