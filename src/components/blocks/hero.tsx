@@ -1,113 +1,69 @@
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
-import {
-  ArrowRight,
-  Blend,
-  ChartNoAxesColumn,
-  CircleDot,
-  Diamond,
-} from "lucide-react";
-
-import { DashedLine } from "@/components/dashed-line";
 import { Button } from "@/components/ui/button";
-
-const features = [
-  {
-    title: "Tailored workflows",
-    description: "Track progress across custom issue flows for your team.",
-    icon: CircleDot,
-  },
-  {
-    title: "Cross-team projects",
-    description: "Collaborate across teams and departments.",
-    icon: Blend,
-  },
-  {
-    title: "Milestones",
-    description: "Break projects down into concrete phases.",
-    icon: Diamond,
-  },
-  {
-    title: "Progress insights",
-    description: "Track scope, velocity, and progress over time.",
-    icon: ChartNoAxesColumn,
-  },
-];
 
 export const Hero = () => {
   return (
-    <section className="py-28 lg:py-32 lg:pt-44">
-      <div className="container flex flex-col justify-between gap-8 md:gap-14 lg:flex-row lg:gap-20">
-        {/* Left side - Main content */}
-        <div className="flex-1">
-          <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
-            Mainline Next.js template
-          </h1>
+    <section className="relative flex min-h-[85vh] items-center overflow-hidden py-24 sm:py-28 lg:min-h-[90vh] lg:py-32 lg:pt-44">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2200&auto=format&fit=crop"
+          alt="Cosmetología profesional"
+          fill
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-background/80 sm:bg-background/75" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/80 to-background" />
+      </div>
 
-          <p className="text-muted-foreground text-1xl mt-5 md:text-3xl">
-            Mainline is an open-source website template built with shadcn/ui,
-            Tailwind 4 & Next.js
+      <div className="pointer-events-none absolute top-32 left-1/2 -z-10 h-64 w-64 -translate-x-1/2 rounded-full bg-primary/20 blur-[100px] sm:h-96 sm:w-96" />
+
+      <div className="container flex justify-center">
+        <div className="max-w-4xl text-center">
+          <p className="mb-5 text-xs uppercase tracking-[0.3em] text-muted-foreground sm:mb-6 sm:text-sm sm:tracking-[0.35em]">
+            Beauty · Style · Professional
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
-            <Button asChild>
-              <a href="https://github.com/shadcnblocks/mainline-nextjs-template">
-                Get template
+          <h1 className="text-4xl font-semibold leading-[1] tracking-tight sm:text-5xl md:text-6xl lg:text-8xl">
+            Donde la belleza
+            <br />
+            se convierte en arte
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:mt-8 sm:text-lg md:text-xl">
+            En <span className="font-medium text-foreground">ELITE Academy</span>{" "}
+            formamos profesionales en cosmetología, estética y belleza integral
+            con técnicas actuales y una metodología práctica.
+          </p>
+
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4">
+            <Button size="lg" className="h-12 px-8" asChild>
+              <a href="#">
+                Empieza tu formación
               </a>
             </Button>
+
             <Button
+              size="lg"
               variant="outline"
-              className="from-background h-auto gap-2 bg-linear-to-r to-transparent shadow-md"
+              className="h-12 gap-2 px-8"
               asChild
             >
-              <a
-                href="https://shadcnblocks.com"
-                className="max-w-56 truncate text-start md:max-w-none"
-              >
-                Built by shadcnblocks.com
-                <ArrowRight className="stroke-3" />
+              <a href="#">
+                Explorar cursos
+                <ArrowRight className="size-4" />
               </a>
             </Button>
           </div>
-        </div>
 
-        {/* Right side - Features */}
-        <div className="relative flex flex-1 flex-col justify-center space-y-5 max-lg:pt-10 lg:pl-10">
-          <DashedLine
-            orientation="vertical"
-            className="absolute top-0 left-0 max-lg:hidden"
-          />
-          <DashedLine
-            orientation="horizontal"
-            className="absolute top-0 lg:hidden"
-          />
-          {features.map((feature) => {
-            const Icon = feature.icon;
-            return (
-              <div key={feature.title} className="flex gap-2.5 lg:gap-5">
-                <Icon className="text-foreground mt-1 size-4 shrink-0 lg:size-5" />
-                <div>
-                  <h2 className="font-text text-foreground font-semibold">
-                    {feature.title}
-                  </h2>
-                  <p className="text-muted-foreground max-w-76 text-sm">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="mt-12 max-lg:ml-6 max-lg:h-[550px] max-lg:overflow-hidden md:mt-20 lg:container lg:mt-24">
-        <div className="relative h-[793px] w-full">
-          <Image
-            src="/hero.webp"
-            alt="hero"
-            fill
-            className="rounded-2xl object-cover object-left-top shadow-lg max-lg:rounded-tr-none"
-          />
+          <div className="mt-10 flex items-center justify-center gap-4 text-xs text-muted-foreground sm:mt-14 sm:gap-6 sm:text-sm">
+            <div className="h-px w-10 bg-border sm:w-16" />
+            <p className="whitespace-nowrap">
+              Formación profesional en belleza
+            </p>
+            <div className="h-px w-10 bg-border sm:w-16" />
+          </div>
         </div>
       </div>
     </section>
