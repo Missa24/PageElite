@@ -1,4 +1,12 @@
 "use client";
+{/*
+-- features cambiar a cursos, desploega los mimso 7
+-- sus rutas y navbar y footer
+-- bloques opcional, AGREGAR un filtro 
+-- pnpm run build "no podemos desplegar al servidor si tiene errores y notifica"
+-- imagenes webp
+-- en public, poner carpeta "cursos, y poner las imagenes" re
+*/}
 
 import { useState } from "react";
 
@@ -19,6 +27,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { features } from "process";
 
 const ITEMS = [
   {
