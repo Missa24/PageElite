@@ -15,20 +15,20 @@ interface Curso {
 const cursos = [
   {
     numero: "01",
-    titulo: "Estética Integral",
+    titulo: "Certificaciones Profesionales",
     descripcion:
-<<<<<<< HEAD
-      "Formación profesional en áreas de belleza y estética con técnicas actualizadas, prácticas especializadas y enfoque integral para desarrollar tus habilidades.",
-    enlace: "/cursos/especialidades",
-    imagen: "/cursos/especialidades.webp",
-    imagenAlt: "Estudiante practicando técnicas de estética",
-=======
-      "La base más completa de la formación estética.",
-    enlace: "/cursos/estetica-integral",
->>>>>>> 17a678c63942d5ad5584451df5ca4ef2e83bb39c
+      "Programas certificados para impulsar tu perfil profesional.",
+    enlace: "/cursos/certificaciones",
   },
   {
     numero: "02",
+    titulo: "Especialidades Avanzadas",
+    descripcion:
+      "Cursos especializados para profesionales.",
+    enlace: "/cursos/especialidades",
+  },
+  {
+    numero: "03",
     titulo: "Estética Facial",
     descripcion:
       "Especialización en tratamientos faciales y cuidado avanzado de la piel.",
@@ -37,7 +37,7 @@ const cursos = [
     imagenAlt: "Tratamiento facial en cabina de estética",
   },
   {
-    numero: "03",
+    numero: "04",
     titulo: "Estética Corporal",
     descripcion:
       "Formación práctica en tratamientos corporales profesionales.",
@@ -46,7 +46,7 @@ const cursos = [
     imagenAlt: "Masaje corporal profesional",
   },
   {
-    numero: "04",
+    numero: "05",
     titulo: "Maquillaje Profesional",
     descripcion:
       "Maquillaje social, artístico y editorial.",
@@ -55,7 +55,7 @@ const cursos = [
     imagenAlt: "Maquillaje artístico editorial",
   },
   {
-    numero: "05",
+    numero: "06",
     titulo: "Cejas y Pestañas",
     descripcion:
       "Diseño de cejas, lifting y extensiones.",
@@ -63,40 +63,14 @@ const cursos = [
     imagen: "/cursos/cejas.webp",
     imagenAlt: "Diseño de cejas y pestañas",
   },
-  {
-    numero: "06",
-    titulo: "Especialidades Avanzadas",
-    descripcion:
-<<<<<<< HEAD
-      "Aprende técnicas combinadas de estética facial y corporal para ofrecer tratamientos completos, mejorar tus servicios y crecer profesionalmente.",
-    enlace: "/cursos/estetica-integral",
-    imagen: "/cursos/certificaciones.webp",
-    imagenAlt: "Tratamiento de estética integral",
-=======
-      "Cursos especializados para profesionales.",
-    enlace: "/cursos/especialidades",
-  },
-  {
-    numero: "07",
-    titulo: "Certificaciones Profesionales",
-    descripcion:
-      "Programas certificados para impulsar tu perfil profesional.",
-    enlace: "/cursos/certificaciones",
->>>>>>> 17a678c63942d5ad5584451df5ca4ef2e83bb39c
-  },
 ];
 
 export const Cursos = () => {
   return (
     <section id="cursos" className="overflow-hidden pb-28 lg:pb-32">
       <div>
-<<<<<<< HEAD
-        <p className="container text-center text-sm font-medium  text-primary uppercase">
-          Nuestras Especialidades
-=======
-        <p className="container text-center text-sm font-medium tracking-wide text-muted-foreground uppercase">
+        <p className="container text-center text-sm font-medium tracking-wide text-primary uppercase">
           Nuestras Áreas de Formación
->>>>>>> 17a678c63942d5ad5584451df5ca4ef2e83bb39c
         </p>
 
         <h2 className="container mt-2 text-center text-3xl tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
@@ -114,7 +88,7 @@ export const Cursos = () => {
           ))}
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
