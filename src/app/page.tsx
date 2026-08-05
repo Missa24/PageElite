@@ -2,25 +2,20 @@ import { Background } from "@/components/background";
 import { FAQ } from "@/components/blocks/faq";
 import { Features } from "@/components/blocks/features";
 import { Hero } from "@/components/blocks/hero";
-import { Logos } from "@/components/blocks/logos";
-import { CtaBanner } from "@/components/blocks/ctabanner";
+import { Gallery } from "@/components/blocks/gallery";
 import { Cursos } from "@/components/blocks/course";
 import { Docentes } from "@/components/blocks/docente";
 
 export default function Home() {
   return (
     <>
-      <Background className="via-muted to-muted/80">
+      <Background className="">
         <Hero />
         <Features />
         <Cursos />
         <Docentes />
-      </Background>
-
-      <Background variant="bottom">
-        <CtaBanner />
+        <Gallery />
         <FAQ />
-
       </Background>
     </>
   );
