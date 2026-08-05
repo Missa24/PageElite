@@ -9,6 +9,7 @@ import { StyleGlideProvider } from "@/components/styleglide-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import "@/styles/globals.css";
 
+
 const dmSans = localFont({
   src: [
     {
@@ -56,89 +57,113 @@ const dmSans = localFont({
   display: "swap",
 });
 
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
+
 export const metadata: Metadata = {
+
   title: {
-    default: "Mainline - Modern Next.js Template",
-    template: "%s | Mainline",
+    default:
+      "Elite Academy | Formación Profesional en Cosmetología y Estética",
+    template: "%s | Elite Academy",
   },
+
+
   description:
-    "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+    "Elite Academy Bolivia es una academia especializada en formación profesional de cosmetología, estética facial, estética corporal y maquillaje profesional con cursos certificados y resolución ministerial.",
+
+
   keywords: [
-    "Next.js",
-    "nextjs template",
-    "nextjs theme",
-    "nextjs starter",
-    "shadcn template",
-    "shadcn theme",
-    "shadcn starter",
-    "tailwind template",
-    "tailwind theme",
-    "tailwind starter",
-    "mdx template",
-    "mdx theme",
-    "mdx starter",
+    "Elite Academy Bolivia",
+    "cursos de cosmetología Bolivia",
+    "cursos de estética La Paz",
+    "academia de belleza Bolivia",
+    "cosmetología profesional",
+    "estética facial",
+    "estética corporal",
+    "maquillaje profesional",
+    "cursos de maquillaje Bolivia",
+    "cosmiatría",
+    "especializaciones de belleza",
+    "formación profesional estética",
+    "cursos certificados de belleza",
   ],
-  authors: [{ name: "shadcnblocks.com" }],
-  creator: "shadcnblocks.com",
-  publisher: "shadcnblocks.com",
+  authors: [
+    {
+      name: "Elite Academy",
+    },
+  ],
+  creator: "Elite Academy",
+  publisher: "Elite Academy",
   robots: {
     index: true,
     follow: true,
   },
   icons: {
     icon: [
-      { url: "/favicon/favicon.ico", sizes: "48x48" },
-      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon/favicon.ico" },
+      {
+        url: "/favicon/favicon.ico",
+        sizes: "48x48",
+      },
+      {
+        url: "/favicon/favicon-96x96.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
     ],
-    apple: [{ url: "/favicon/apple-touch-icon.png", sizes: "180x180" }],
-    shortcut: [{ url: "/favicon/favicon.ico" }],
+    apple: [
+      {
+        url: "/favicon/apple-touch-icon.png",
+        sizes: "180x180",
+      },
+    ],
   },
+
+
   openGraph: {
-    title: "Mainline - Modern Next.js Template",
+    type: "website",
+    locale: "es_BO",
+    title:
+      "Elite Academy | Academia Profesional de Belleza en Bolivia",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
-    siteName: "Mainline",
+      "Formación profesional en cosmetología, estética facial, estética corporal y maquillaje con cursos especializados.",
+    siteName: "Elite Academy",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mainline - Modern Next.js Template",
+        alt: "Elite Academy Bolivia - Formación Profesional en Belleza",
       },
     ],
   },
+
+
   twitter: {
     card: "summary_large_image",
-    title: "Mainline - Modern Next.js Template",
+    title:
+      "Elite Academy | Formación Profesional en Belleza",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
-    images: ["/og-image.jpg"],
-    creator: "@ausrobdev",
+      "Cursos profesionales de cosmetología, estética y maquillaje en Bolivia.",
+    images: [
+      "/og-image.jpg",
+    ],
   },
 };
+
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          async
-          crossOrigin="anonymous"
-          src="https://tweakcn.com/live-preview.min.js"
-        />
-      </head>
+    <html lang="es" suppressHydrationWarning>
       <body className={`${dmSans.variable} ${inter.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
@@ -148,7 +173,9 @@ export default function RootLayout({
         >
           <StyleGlideProvider />
           <Navbar />
-          <main className="">{children}</main>
+          <main>
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>
