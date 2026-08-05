@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Background } from "@/components/background";
-import { Pricing } from "@/components/blocks/pricing";
+import { Pricing } from "@/components/blocks/ctabanner";
 import { PricingTable } from "@/components/blocks/pricing-table";
 
 const Page = () => {
