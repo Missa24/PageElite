@@ -13,4 +13,52 @@ export const cursosMaquillaje: Curso[] = [
     badge: "Inscripciones Abiertas",
     precio: "Descuentos con cupos limitados",
   },
+  {
+    id: "maquillaje-correctivo",
+    titulo: "Maquillaje Correctivo",
+    categoria: "Curso de Maquillaje",
+    descripcion:
+      "Corrección de ojeras, manchas, cicatrices y asimetrías. Contorno y esculpido facial con productos y texturas correctivas de alto rendimiento.",
+    imagen: "/images/cursos/maquillaje-correctivo.jpg",
+    href: "/cursos/maquillaje/maquillaje-correctivo",
+    modalidad: "Online & Presencial",
+    badge: "Inscripciones Abiertas",
+    precio: "Descuentos con cupos limitados",
+  },
+  {
+    id: "maquillaje-efectos-especiales",
+    titulo: "Maquillaje de Efectos Especiales",
+    categoria: "Curso de Maquillaje",
+    descripcion:
+      "Heridas, envejecimiento, criaturas fantásticas y body painting. Materiales especiales como látex y silicona para cine, teatro y eventos.",
+    imagen: "/images/cursos/maquillaje-efectos-especiales.jpg",
+    href: "/cursos/maquillaje/maquillaje-efectos-especiales",
+    modalidad: "Online & Presencial",
+    badge: "Inscripciones Abiertas",
+    precio: "Descuentos con cupos limitados",
+  },
+  {
+    id: "maquillaje-artistico",
+    titulo: "Maquillaje Artístico",
+    categoria: "Curso de Maquillaje",
+    descripcion:
+      "Body painting, avant-garde, pasarela y diseños abstractos. Maquillaje como expresión artística para concursos, campañas y creación de portfolio profesional.",
+    imagen: "/images/cursos/maquillaje-artistico.jpg",
+    href: "/cursos/maquillaje/maquillaje-artistico",
+    modalidad: "Online & Presencial",
+    badge: "Inscripciones Abiertas",
+    precio: "Descuentos con cupos limitados",
+  },
+  {
+    id: "maquillaje-editorial-fotografia",
+    titulo: "Maquillaje Editorial y Fotografía",
+    categoria: "Curso de Maquillaje",
+    descripcion:
+      "Maquillaje para fotografía editorial, campañas y redes sociales. Cómo la luz y la cámara afectan el resultado. Trabajo con fotógrafos y portfolio.",
+    imagen: "/images/cursos/maquillaje-editorial-fotografia.jpg",
+    href: "/cursos/maquillaje/maquillaje-editorial-fotografia",
+    modalidad: "Online & Presencial",
+    badge: "Inscripciones Abiertas",
+    precio: "Descuentos con cupos limitados",
+  },
 ];
