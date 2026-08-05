@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { Curso } from "./types";
 import { cn } from "@/lib/utils";
@@ -17,63 +17,49 @@ export function CourseCard({
     return (
         <div
             className={cn(
-                "group overflow-hidden rounded-3xl border bg-card transition-all duration-300",
-                "border-border hover:-translate-y-1 hover:shadow-xl",
+                "group overflow-hidden border bg-card transition-all duration-300 ease-in-out",
+                "border-border/60 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5",
                 className
             )}
         >
-            <Link href={curso.href}>
-                <div className="relative aspect-[4/3] overflow-hidden">
+            <Link href={curso.href} className="block space-y-6">
+                <div className="relative aspect-[16/10] overflow-hidden bg-muted">
                     <Image
                         src={curso.imagen}
                         alt={curso.titulo}
                         fill
-                        className="object-cover transition duration-500 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover transition duration-700 group-hover:scale-102"
+                        priority={false}
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 </div>
-
-                <div className="space-y-5 p-6">
-
-                    <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
-                        {curso.badge ?? "Inscripciones Abiertas"}
-                    </span>
-
-                    <div>
-                        <h3 className="text-xl font-semibold text-foreground">
-                            {curso.titulo}
-                        </h3>
-
-                        <p className="mt-1 text-sm text-muted-foreground italic">
+                <div className="flex flex-col px-6 pb-6 min-h-[240px] justify-between">
+                    <div className="space-y-4">
+                        <p className="text-xs font-semibold uppercase tracking-wider text-primary/80">
                             {curso.categoria}
                         </p>
-                    </div>
-
-                    <p className="text-sm leading-6 text-muted-foreground">
-                        {curso.descripcion}
-                    </p>
-
-                    {curso.modalidad && (
-                        <div className="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm text-muted-foreground">
-                            <BadgeCheck className="h-4 w-4 text-primary" />
-                            {curso.modalidad}
-                        </div>
-                    )}
-
-                    {curso.precio && (
-                        <div className="rounded-xl bg-muted p-3 text-center">
-                            <p className="text-sm font-semibold text-foreground">
-                                {curso.precio}
+                        <div>
+                            <h3 className="text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors duration-300 line-clamp-2">
+                                {curso.titulo}
+                            </h3>
+                            <p className="mt-3 text-sm leading-relaxed text-muted-foreground line-clamp-3">
+                                {curso.descripcion}
                             </p>
                         </div>
-                    )}
-
-                    <div className="flex items-center justify-between pt-2">
-
-                        <span className="inline-flex items-center gap-2 font-medium text-primary">
+                    </div>
+                    <div className="mt-6 pt-4 border-t border-border/40 flex items-center justify-between">
+                        {curso.precio ? (
+                            <span className="text-base font-bold text-foreground tracking-tight">
+                                {curso.precio}
+                            </span>
+                        ) : (
+                            <span />
+                        )}
+                        <span className="inline-flex items-center gap-1.5 text-sm font-semibold tracking-wide text-primary">
                             Ver programa
-                            <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                         </span>
-
                     </div>
                 </div>
             </Link>
