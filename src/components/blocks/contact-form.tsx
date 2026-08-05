@@ -29,7 +29,20 @@ export const ContactForm = () => {
   });
 
   const onSubmit = (data: ContactValues) => {
-    console.log(data);
+    const subject = encodeURIComponent(
+      `Nueva consulta de ${data.name}`
+    );
+
+    const body = encodeURIComponent(`
+        Nombre: ${data.name}
+        Correo: ${data.email}
+        Teléfono: ${data.phone}
+
+        Mensaje:
+        ${data.message}
+          `);
+
+    window.location.href = `mailto:missaelapaza@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (

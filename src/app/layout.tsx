@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
 import type { Metadata } from "next";
-
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 import { Footer } from "@/components/blocks/footer";
 import { Navbar } from "@/components/blocks/navbar";
 import { StyleGlideProvider } from "@/components/styleglide-provider";
@@ -176,6 +176,7 @@ export default function RootLayout({
           <main>
             {children}
           </main>
+          <WhatsAppFloat />
           <Footer />
         </ThemeProvider>
       </body>

@@ -14,6 +14,22 @@ import {
 
 import { ContactForm } from "@/components/blocks/contact-form";
 import { DashedLine } from "@/components/dashed-line";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contacto | Elite Academy Bolivia",
+  description:
+    "Contacta con Elite Academy en La Paz, Bolivia. Solicita información sobre cursos de cosmetología, estética, maquillaje y formación profesional con resolución ministerial.",
+  keywords: [
+    "contacto Elite Academy",
+    "Elite Academy Bolivia",
+    "academia de belleza La Paz",
+    "cursos de cosmetología Bolivia",
+    "cursos de estética Bolivia",
+    "formación profesional belleza",
+  ],
+};
+
 
 const contactInfo = [
   {

@@ -1,13 +1,21 @@
 import { cursosCejasPestanas } from "@/data/curso-detalle/cejas-pestanas";
+import { notFound } from "next/navigation";
 
 
-interface props {
-    params: {
+interface PageProps {
+    params: Promise<{
         id: string;
-    }
+    }>;
 }
-export default function page(id: props) {
-    const curso = cursosCejasPestanas.find(curso => curso.id === id.params.id);
+
+export default async function page({ params }: PageProps) {
+    const { id } = await params;
+    const curso = cursosCejasPestanas.find((curso) => curso.id === id);
+
+    if (!curso) {
+        notFound();
+    }
+
     return (
         <div>
 

@@ -119,33 +119,28 @@ export const Docentes = ({
                     >
                       <Card className="bg-muted h-full overflow-hidden border-none">
                         <CardContent className="flex h-full flex-col p-0">
-                          <div className="relative h-[240px] lg:h-[264px]">
+                          <div className="group relative aspect-[4/5] overflow-hidden">
                             <Image
                               src={docente.imagen!}
                               alt={docente.nombre}
                               fill
-                              className="object-cover object-top"
+                              sizes="(max-width:768px) 90vw,
+           (max-width:1200px) 40vw,
+           25vw"
+                              className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                             />
-                          </div>
 
-                          <div className="flex flex-1 flex-col gap-4 p-6">
-                            <div>
-                              <div className="text-primary font-semibold">
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+
+                            <div className="absolute bottom-0 left-0 right-0 p-5">
+                              <h3 className="text-lg font-semibold text-white">
                                 {docente.nombre}
-                              </div>
-                              <div className="text-muted-foreground text-sm">
-                                {docente.cargo}
-                              </div>
-                            </div>
+                              </h3>
 
-                            <ul className="text-muted-foreground space-y-1.5 text-sm">
-                              {docente.detalles.map((detalle, i) => (
-                                <li key={i} className="flex gap-2">
-                                  <span className="text-foreground">—</span>
-                                  <span>{detalle}</span>
-                                </li>
-                              ))}
-                            </ul>
+                              <p className="mt-1 text-sm text-white/80">
+                                {docente.cargo}
+                              </p>
+                            </div>
                           </div>
                         </CardContent>
                       </Card>

@@ -1,14 +1,11 @@
-import { Curso } from "./types";
 import { CourseCard } from "./course-card";
-
+import { Curso } from "./types";
 
 interface Props {
     title: string;
     subtitle: string;
     cursos: Curso[];
 }
-
-
 
 export function CourseGrid({
     title,
