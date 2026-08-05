@@ -8,56 +8,35 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
-const categories = [
+const preguntas = [
   {
-    title: "Support",
-    questions: [
-      {
-        question: "How do I update my account without breaking my laptop?",
-        answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
-      },
-      {
-        question: "Is support free, or do I need to Google everything?",
-        answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
-      },
-      {
-        question: "Are you going to be subsumed by AI?",
-        answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
-      },
-    ],
+    pregunta: "¿Quiénes pueden estudiar en la academia?",
+    respuesta:
+      "Cualquier persona apasionada por la belleza, sin experiencia previa.",
   },
   {
-    title: "Your account",
-    questions: [
-      {
-        question: "Is support free, or do I need to Google everything?",
-        answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
-      },
-      {
-        question: "Are you going to be subsumed by AI?",
-        answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
-      },
-    ],
+    pregunta: "¿Los cursos incluyen materiales?",
+    respuesta: "Sí, todos nuestros cursos incluyen materiales y productos.",
   },
   {
-    title: "Other questions",
-    questions: [
-      {
-        question: "Is support free, or do I need to Google everything?",
-        answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
-      },
-      {
-        question: "Are you going to be subsumed by AI?",
-        answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
-      },
-    ],
+    pregunta: "¿Recibo certificado al finalizar?",
+    respuesta:
+      "Sí, obtendrá un certificado avalado por nuestra institución.",
+  },
+  {
+    pregunta: "¿Las clases son presenciales u online?",
+    respuesta:
+      "Contamos con modalidad presencial, online y semipresencial.",
+  },
+  {
+    pregunta: "¿Puedo pagar en cuotas?",
+    respuesta:
+      "Sí, ofrecemos diferentes métodos de pago y cuotas sin interés.",
+  },
+  {
+    pregunta: "¿Dónde están ubicados?",
+    respuesta:
+      "Estamos en el corazón de la ciudad, con fácil acceso y estacionamiento.",
   },
 ];
 
@@ -75,42 +54,40 @@ export const FAQ = ({
       <div className="container max-w-5xl">
         <div className={cn("mx-auto grid gap-16 lg:grid-cols-2", className2)}>
           <div className="space-y-4">
+            <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
+              FAQ
+            </p>
+
             {headerTag === "h1" ? (
               <h1 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-                Got Questions?
+                Preguntas Frecuentes
               </h1>
             ) : (
               <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-                Got Questions?
+                Preguntas Frecuentes
               </h2>
             )}
+
             <p className="text-muted-foreground max-w-md leading-snug lg:mx-auto">
-              If you can't find what you're looking for,{" "}
+              Todo lo que necesitas saber sobre nuestros cursos.{" "}
               <Link href="/contact" className="underline underline-offset-4">
-                get in touch
-              </Link>
-              .
+                Contáctanos
+              </Link>{" "}
+              si tienes otra duda.
             </p>
           </div>
 
-          <div className="grid gap-6 text-start">
-            {categories.map((category, categoryIndex) => (
-              <div key={category.title} className="">
-                <h3 className="text-muted-foreground border-b py-4">
-                  {category.title}
-                </h3>
-                <Accordion type="single" collapsible className="w-full">
-                  {category.questions.map((item, i) => (
-                    <AccordionItem key={i} value={`${categoryIndex}-${i}`}>
-                      <AccordionTrigger>{item.question}</AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground">
-                        {item.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              </div>
-            ))}
+          <div className="text-start">
+            <Accordion type="single" collapsible className="w-full">
+              {preguntas.map((item, i) => (
+                <AccordionItem key={i} value={`${i}`}>
+                  <AccordionTrigger>{item.pregunta}</AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {item.respuesta}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </div>
