@@ -1,7 +1,14 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Elite Academy Bolivia",
+  "short_name": "Elite Academy",
+  "description": "Academia especializada en formación profesional de cosmetología, estética facial, estética corporal y maquillaje en Bolivia.",
   "icons": [
+    {
+      "src": "/favicon/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
@@ -17,5 +24,7 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "lang": "es-BO",
+  "start_url": "/"
 }
