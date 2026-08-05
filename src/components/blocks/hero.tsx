@@ -58,11 +58,6 @@ export const Hero = () => {
           </div>
 
           <div className="mt-10 flex items-center justify-center gap-4 text-xs text-muted-foreground sm:mt-14 sm:gap-6 sm:text-sm">
-            <div className="h-px w-10 bg-border sm:w-16" />
-            <p className="whitespace-nowrap">
-              Formación profesional en belleza
-            </p>
-            <div className="h-px w-10 bg-border sm:w-16" />
           </div>
         </div>
       </div>

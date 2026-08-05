@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { ChevronRight, Github } from "lucide-react";
+import { ChevronRight, Key } from "lucide-react";
 
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -21,6 +21,10 @@ import {
 import { cn } from "@/lib/utils";
 
 const ITEMS = [
+  {
+    label: "Inicio",
+    href: "/",
+  },
   {
     label: "Features",
     href: "#features",
@@ -38,10 +42,26 @@ const ITEMS = [
       },
     ],
   },
-  { label: "About Us", href: "/about" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
+  {
+    label: "¿Por qué elegirnos?",
+    href: "/#porque",
+  },
+  {
+    label: "Cursos",
+    href: "/#cursos",
+  },
+  {
+    label: "Docentes",
+    href: "/#docentes",
+  },
+  {
+    label: "FAQ",
+    href: "/faq",
+  },
+  {
+    label: "Contacto",
+    href: "/#cta",
+  },
 ];
 
 export const Navbar = () => {
@@ -52,22 +72,21 @@ export const Navbar = () => {
   return (
     <section
       className={cn(
-        "bg-background/70 absolute left-1/2 z-50 w-[min(90%)] -translate-x-1/2 rounded-4xl border backdrop-blur-md transition-all duration-300",
-        "top-5 lg:top-12",
+        "bg-background/70 absolute left-1/2 z-50 w-[calc(100%-2rem)] -translate-x-1/2 rounded-4xl border backdrop-blur-md transition-all duration-300",
+        "top-4 sm:top-6 lg:top-12 lg:w-[75%] xl:w-[70%]",
       )}
     >
       <div className="flex items-center justify-between px-6 py-3">
-        <Link href="/" className="flex shrink-0 items-center gap-2">
+        <Link href="/" className="flex shrink-0 items-center">
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="logo"
-            width={94}
-            height={18}
-            className="dark:invert"
+            width={1368}
+            height={1368}
+            className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain"
           />
         </Link>
 
-        {/* Desktop Navigation */}
         <NavigationMenu className="max-lg:hidden">
           <NavigationMenuList>
             {ITEMS.map((link) =>
@@ -120,17 +139,13 @@ export const Navbar = () => {
         {/* Auth Buttons */}
         <div className="flex items-center gap-2.5">
           <ThemeToggle />
-          <Link href="/login" className="max-lg:hidden">
-            <Button variant="outline">
-              <span className="relative z-10">Login</span>
-            </Button>
-          </Link>
           <a
             href="https://github.com/shadcnblocks/mainline-nextjs-template"
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-muted-foreground hover:text-foreground flex items-center gap-2 transition-colors"
           >
-            <Github className="size-4" />
-            <span className="sr-only">GitHub</span>
+            <Key className="size-4" />
+            <span>Log in</span>
+            <span className="sr-only">Iniciar sesión</span>
           </a>
 
           {/* Hamburger Menu Button (Mobile Only) */}
@@ -157,7 +172,6 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/*  Mobile Menu Navigation */}
       <div
         className={cn(
           "bg-background fixed inset-x-0 top-[calc(100%+1rem)] flex flex-col rounded-2xl border p-6 transition-all duration-300 ease-in-out lg:hidden",
