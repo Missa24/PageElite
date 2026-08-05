@@ -35,19 +35,44 @@ const ITEMS = [
     href: "/",
   },
   {
-    label: "Features",
-    href: "#features",
+    label: "Cursos",
+    href: "#cursos",
     dropdownItems: [
       {
-        title: "Modern product teams",
-        href: "/#feature-modern-teams",
+        title: "Certificaciones Profesionales",
+        href: "/cursos/certificaciones",
         description:
-          "Mainline is built on the habits that make the best product teams successful",
+          "Programas certificados para impulsar tu perfil profesional.",
       },
       {
-        title: "Resource Allocation",
-        href: "/#resource-allocation",
-        description: "Mainline your resource allocation and execution",
+        title: "Especialidades Avanzadas",
+        href: "/cursos/especialidades",
+        description:
+          "Cursos especializados para profesionales de la estética y belleza.",
+      },
+      {
+        title: "Estética Facial",
+        href: "/cursos/faciales",
+        description:
+          "Tratamientos faciales y cuidado avanzado de la piel.",
+      },
+      {
+        title: "Estética Corporal",
+        href: "/cursos/corporales",
+        description:
+          "Formación práctica en tratamientos corporales profesionales.",
+      },
+      {
+        title: "Maquillaje Profesional",
+        href: "/cursos/maquillaje",
+        description:
+          "Maquillaje social, artístico y editorial profesional.",
+      },
+      {
+        title: "Cejas y Pestañas",
+        href: "/cursos/cejas-pestanas",
+        description:
+          "Diseño de cejas, lifting y extensiones profesionales.",
       },
     ],
   },
@@ -56,20 +81,16 @@ const ITEMS = [
     href: "/#porque",
   },
   {
-    label: "Cursos",
-    href: "/#cursos",
-  },
-  {
     label: "Docentes",
     href: "/#docentes",
   },
   {
     label: "FAQ",
-    href: "/faq",
+    href: "/#faq",
   },
   {
     label: "Contacto",
-    href: "/#cta",
+    href: "/contact",
   },
 ];
 
@@ -81,8 +102,8 @@ export const Navbar = () => {
   return (
     <section
       className={cn(
-        "bg-background/70 absolute left-1/2 z-50 w-[calc(100%-2rem)] -translate-x-1/2 rounded-4xl border backdrop-blur-md transition-all duration-300",
-        "top-4 sm:top-6 lg:top-12 lg:w-[75%] xl:w-[70%]",
+        "fixed left-1/2 top-4 z-50 w-[calc(100%-2rem)] -translate-x-1/2 rounded-4xl border bg-background/70 backdrop-blur-md",
+        "sm:top-6 lg:top-12 lg:w-[75%] xl:w-[70%]"
       )}
     >
       <div className="flex items-center justify-between px-6 py-3">
