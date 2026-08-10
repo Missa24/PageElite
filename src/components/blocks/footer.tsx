@@ -1,16 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
-
-import { ArrowUpRight } from "lucide-react";
-import { Facebook, Instagram, Music2 } from "lucide-react";
-
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
+
+import { Facebook, Instagram, Music2 } from "lucide-react";
 
 export function Footer() {
   const navigation = [
     { name: "Inicio", href: "/" },
     { name: "¿Por qué elegirnos?", href: "/#porque" },
-    { name: "Cursos", href: "/#cursos" },
     { name: "Docentes", href: "/#docentes" },
     { name: "Preguntas frecuentes", href: "/#faq" },
     { name: "Contáctanos", href: "/#cta" },
@@ -41,7 +38,7 @@ export function Footer() {
   return (
     <footer className="relative flex flex-col items-center gap-14 overflow-hidden pb-20 pt-28 lg:pt-32">
       <div className="container z-10 space-y-3 text-center">
-        <h2 className="text-xl tracking-tight md:text-4xl lg:text-5xl">
+        <h2 className="text-sm tracking-tight md:text-4xl lg:text-2xl">
           Empieza hoy tu camino en la belleza profesional.
         </h2>
 
