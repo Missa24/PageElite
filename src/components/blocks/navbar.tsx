@@ -15,6 +15,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { ChevronRight, Key } from "lucide-react";
+import { features } from "process";
 
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -27,7 +28,6 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { features } from "process";
 
 const ITEMS = [
   {
@@ -126,7 +126,7 @@ export const Navbar = () => {
                     {link.label}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="w-[400px] space-y-2 p-4">
+                    <ul className="w-[240px] space-y-2 p-2">
                       {link.dropdownItems.map((item) => (
                         <li key={item.title}>
                           <NavigationMenuLink asChild>
@@ -138,9 +138,9 @@ export const Navbar = () => {
                                 <div className="text-sm leading-none font-medium">
                                   {item.title}
                                 </div>
-                                <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                                {/* <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
                                   {item.description}
-                                </p>
+                                </p> */}
                               </div>
                             </Link>
                           </NavigationMenuLink>

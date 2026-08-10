@@ -1,0 +1,16 @@
+import { Background } from "@/components/background";
+import { CourseDetail } from "@/components/cursos/course-detail";
+import { cursosCorporales } from "@/data/curso-detalle/corporales";
+
+export default async function Page({ params }: { params: { id: string } }) {
+  const { id } = params;
+  const curso = cursosCorporales.find((curso) => curso.id === id);
+
+  return (
+    <Background>
+      <CourseDetail
+        curso={curso!}
+      />
+    </Background>
+  );
+}

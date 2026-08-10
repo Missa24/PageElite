@@ -7,8 +7,8 @@ export const cursosCertificaciones: Curso[] = [
     categoria: "Certificación",
     descripcion:
       "Formación dirigida a profesionales del área de la belleza o la salud que deseen ampliar sus conocimientos con nuevas técnicas internacionales.",
-    imagen: "/images/cursos/cosmiatria.jpg",
-    href: "/cursos/especializacion/cosmiatria",
+    imagen: "/images/cursos/cosmiatria.webp",
+    href: "/cursos/certificaciones/cosmiatria",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
@@ -20,7 +20,7 @@ export const cursosCertificaciones: Curso[] = [
     descripcion:
       "Domina el arte de la belleza desde sus bases. Construye una carrera sólida con técnicas que el mundo exige y la academia que Sudamérica confía.",
     imagen: "/images/cursos/cosmetologia-cosmiatria.jpg",
-    href: "/cursos/especializacion/cosmetologia-cosmiatria",
+    href: "/cursos/certificaciones/cosmetologia-cosmiatria",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
@@ -32,7 +32,7 @@ export const cursosCertificaciones: Curso[] = [
     descripcion:
       "Transforma cuerpos y vidas con tus propias manos. Aprende los protocolos más demandados del mercado y conviértete en la profesional que todas buscan.",
     imagen: "/images/cursos/estetica-corporal.jpg",
-    href: "/cursos/especializacion/estetica-corporal",
+    href: "/cursos/certificaciones/estetica-corporal",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
@@ -44,7 +44,7 @@ export const cursosCertificaciones: Curso[] = [
     descripcion:
       "Tu paleta es tu poder. Aprende a crear looks que emocionan, sorprenden y se convierten en tu mejor carta de presentación al mundo.",
     imagen: "/images/cursos/maquillaje-profesional.jpg",
-    href: "/cursos/especializacion/maquillaje-profesional",
+    href: "/cursos/certificaciones/maquillaje-profesional",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
