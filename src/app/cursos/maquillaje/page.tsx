@@ -1,6 +1,6 @@
+import { Background } from "@/components/background";
 import { CourseGrid } from "@/components/cursos/course-grid";
 import { cursosMaquillaje } from "@/data/curso-detalle/maquillaje";
-import { Background } from "@/components/background";
 
 export default function MaquillajePage() {
     return (

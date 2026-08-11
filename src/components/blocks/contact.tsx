@@ -11,10 +11,10 @@ import {
   Clock,
   Music2,
 } from "lucide-react";
+import { Metadata } from "next";
 
 import { ContactForm } from "@/components/blocks/contact-form";
 import { DashedLine } from "@/components/dashed-line";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contacto | Elite Academy Bolivia",

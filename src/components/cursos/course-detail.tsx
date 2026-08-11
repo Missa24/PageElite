@@ -1,5 +1,6 @@
-import { Curso } from "./types";
 import { FaWhatsapp } from "react-icons/fa";
+
+import { Curso } from "./types";
 import { Button } from "../ui/button";
 interface Props {
   curso: Curso;

@@ -1,6 +1,6 @@
+import { Background } from "@/components/background";
 import { CourseGrid } from "@/components/cursos/course-grid";
 import { cursosCorporales } from "@/data/curso-detalle/corporales";
-import { Background } from "@/components/background";
 
 export default function CorporalesPage() {
     return (

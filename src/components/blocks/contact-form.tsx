@@ -42,6 +42,7 @@ export const ContactForm = () => {
         ${data.message}
           `);
 
+    //const correo = "elite.academy.bo@gmail.com"
     window.location.href = `mailto:missaelapaza@gmail.com?subject=${subject}&body=${body}`;
   };
 
