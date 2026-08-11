@@ -7,7 +7,7 @@ export const cursosMaquillaje: Curso[] = [
     categoria: "Curso de Maquillaje",
     descripcion:
       "Aprende maquillaje social, profesional y técnicas modernas para cualquier ocasión.",
-    imagen: "/images/cursos/maquillaje-profesional.jpg",
+    imagen: "/cursos/maquillaje/maquillaje-profesional.webp",
     href: "/cursos/maquillaje/maquillaje-profesional",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -19,7 +19,7 @@ export const cursosMaquillaje: Curso[] = [
     categoria: "Curso de Maquillaje",
     descripcion:
       "Corrección de ojeras, manchas, cicatrices y asimetrías. Contorno y esculpido facial con productos y texturas correctivas de alto rendimiento.",
-    imagen: "/images/cursos/maquillaje-correctivo.jpg",
+    imagen: "/cursos/maquillaje/maquillaje-correctivo.webp",
     href: "/cursos/maquillaje/maquillaje-correctivo",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -31,7 +31,7 @@ export const cursosMaquillaje: Curso[] = [
     categoria: "Curso de Maquillaje",
     descripcion:
       "Heridas, envejecimiento, criaturas fantásticas y body painting. Materiales especiales como látex y silicona para cine, teatro y eventos.",
-    imagen: "/images/cursos/maquillaje-efectos-especiales.jpg",
+    imagen: "/cursos/maquillaje/maquillaje-efectos-especiales.webp",
     href: "/cursos/maquillaje/maquillaje-efectos-especiales",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -43,7 +43,7 @@ export const cursosMaquillaje: Curso[] = [
     categoria: "Curso de Maquillaje",
     descripcion:
       "Body painting, avant-garde, pasarela y diseños abstractos. Maquillaje como expresión artística para concursos, campañas y creación de portfolio profesional.",
-    imagen: "/images/cursos/maquillaje-artistico.jpg",
+    imagen: "/cursos/maquillaje/maquillaje-artistico.webp",
     href: "/cursos/maquillaje/maquillaje-artistico",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -55,7 +55,7 @@ export const cursosMaquillaje: Curso[] = [
     categoria: "Curso de Maquillaje",
     descripcion:
       "Maquillaje para fotografía editorial, campañas y redes sociales. Cómo la luz y la cámara afectan el resultado. Trabajo con fotógrafos y portfolio.",
-    imagen: "/images/cursos/maquillaje-editorial-fotografia.jpg",
+    imagen: "/cursos/maquillaje/maquillaje-editorial-fotografia.webp",
     href: "/cursos/maquillaje/maquillaje-editorial-fotografia",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",

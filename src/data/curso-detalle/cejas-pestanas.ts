@@ -7,7 +7,7 @@ export const cursosCejasPestanas: Curso[] = [
     categoria: "Curso de Cejas & Pestañas",
     descripcion:
       "Domina lifting, laminado y diseño profesional de pestañas.",
-    imagen: "/images/cursos/lifting.jpg",
+    imagen: "/cursos/cejas/lifting.webp",
     href: "/cursos/cejas-pestanas/lifting-pestanas",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -19,7 +19,7 @@ export const cursosCejasPestanas: Curso[] = [
     categoria: "Curso de Cejas & Pestañas",
     descripcion:
       "Extensiones pelo a pelo y volumen ruso. Selección de materiales, aplicación, rellenos y mantenimiento. Alta demanda y excelente rentabilidad profesional.",
-    imagen: "/images/cursos/extension-pestanas.jpg",
+    imagen: "/cursos/cejas/extension.webp",
     href: "/cursos/cejas-pestanas/extension-pestanas",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -31,7 +31,7 @@ export const cursosCejasPestanas: Curso[] = [
     categoria: "Curso de Cejas & Pestañas",
     descripcion:
       "Rizado y elevación permanente de pestañas y cejas. Aspecto abierto y definido sin necesidad de maquillaje diario. Resultados duraderos y naturales.",
-    imagen: "/images/cursos/lifting-cejas-pestanas.jpg",
+    imagen: "/cursos/cejas/pestanas.webp",
     href: "/cursos/cejas-pestanas/lifting-cejas-pestanas",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -43,7 +43,7 @@ export const cursosCejasPestanas: Curso[] = [
     categoria: "Curso de Cejas & Pestañas",
     descripcion:
       "Diseño para cada tipo de rostro, mapeo y pigmentación con tinte profesional o henna. Resultados duraderos y de alta definición con prácticas en modelos.",
-    imagen: "/images/cursos/diseno-cejas-tinte-henna.jpg",
+    imagen: "/cursos/cejas/henna.webp",
     href: "/cursos/cejas-pestanas/diseno-cejas-tinte-henna",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",

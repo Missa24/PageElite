@@ -7,7 +7,7 @@ export const cursosCertificaciones: Curso[] = [
     categoria: "Certificación",
     descripcion:
       "Formación dirigida a profesionales del área de la belleza o la salud que deseen ampliar sus conocimientos con nuevas técnicas internacionales.",
-    imagen: "/images/cursos/cosmiatria.webp",
+    imagen: "/cursos/certificaciones/cosmiatria.webp",
     href: "/cursos/certificaciones/cosmiatria",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -19,7 +19,7 @@ export const cursosCertificaciones: Curso[] = [
     categoria: "Certificación",
     descripcion:
       "Domina el arte de la belleza desde sus bases. Construye una carrera sólida con técnicas que el mundo exige y la academia que Sudamérica confía.",
-    imagen: "/images/cursos/cosmetologia-cosmiatria.jpg",
+    imagen: "/cursos/certificaciones/cosmeotologia.webp",
     href: "/cursos/certificaciones/cosmetologia-cosmiatria",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -31,7 +31,7 @@ export const cursosCertificaciones: Curso[] = [
     categoria: "Certificación",
     descripcion:
       "Transforma cuerpos y vidas con tus propias manos. Aprende los protocolos más demandados del mercado y conviértete en la profesional que todas buscan.",
-    imagen: "/images/cursos/estetica-corporal.jpg",
+    imagen: "/cursos/certificaciones/corporal.webp",
     href: "/cursos/certificaciones/estetica-corporal",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -43,7 +43,7 @@ export const cursosCertificaciones: Curso[] = [
     categoria: "Certificación",
     descripcion:
       "Tu paleta es tu poder. Aprende a crear looks que emocionan, sorprenden y se convierten en tu mejor carta de presentación al mundo.",
-    imagen: "/images/cursos/maquillaje-profesional.jpg",
+    imagen: "/cursos/certificaciones/maquillaje.webp",
     href: "/cursos/certificaciones/maquillaje-profesional",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",

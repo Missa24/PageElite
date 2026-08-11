@@ -1,5 +1,5 @@
 import { CourseGrid } from "@/components/cursos/course-grid";
-import { cursosMaquillaje } from "@/data/curso-detalle/maquillaje";
+import { cursosCejasPestanas } from "@/data/curso-detalle/cejas-pestanas";
 import { Background } from "@/components/background";
 
 export default function MaquillajePage() {
@@ -8,7 +8,7 @@ export default function MaquillajePage() {
             <CourseGrid
                 title="Cursos de Cejas y Pestañas"
                 subtitle="Aprende técnicas de Cejas y Pestañas"
-                cursos={cursosMaquillaje}
+                cursos={cursosCejasPestanas}
             />
         </Background>
     );

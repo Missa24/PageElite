@@ -7,7 +7,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Celulitis, flacidez, estrías y lipedema. Comprende las patologías del tejido adiposo para ofrecer tratamientos estéticos personalizados y efectivos.",
-    imagen: "/images/cursos/patologias-tejido-graso.jpg",
+    imagen: "/cursos/corporal/tejido-graso.webp",
     href: "/cursos/corporales/patologias-tejido-graso",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -19,7 +19,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Masaje suave que estimula el sistema linfático para eliminar toxinas, reducir edemas y mejorar la circulación. Ideal para post-operatorios y tratamientos corporales.",
-    imagen: "/images/cursos/drenaje-linfatico-manual.jpg",
+    imagen: "/cursos/corporal/drenaje-linfatico.webp",
     href: "/cursos/corporales/drenaje-linfatico-manual",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -31,7 +31,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Vendajes neuromusculares con fines estéticos y de recuperación post-quirúrgica. Técnica de alta demanda en el ámbito de la estética corporal avanzada.",
-    imagen: "/images/cursos/taping-estetico-post-operatorio.jpg",
+    imagen: "/cursos/corporal/kinesiologia.webp",
     href: "/cursos/corporales/taping-estetico-post-operatorio",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -43,7 +43,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Técnica corporal con instrumentos de madera que activa la circulación, combate la celulitis y moldea la silueta de forma natural y no invasiva.",
-    imagen: "/images/cursos/maderoterapia.jpg",
+    imagen: "/cursos/corporal/madero.webp",
     href: "/cursos/corporales/maderoterapia",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -55,7 +55,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Cera tibia, caliente y azúcar para todas las zonas corporales. Protocolos de higiene, técnica de tirón y cuidados pre y post-depilación.",
-    imagen: "/images/cursos/depilacion-cera.jpg",
+    imagen: "/cursos/corporal/depilacion.webp",
     href: "/cursos/corporales/depilacion-cera",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -67,7 +67,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Técnica especializada para zonas íntimas con cera caliente. Bioseguridad, posicionamiento correcto y manejo profesional del cliente.",
-    imagen: "/images/cursos/depilacion-intima.jpg",
+    imagen: "/cursos/corporal/intima.webp",
     href: "/cursos/corporales/depilacion-intima",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -79,7 +79,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Técnicas para reducir medidas, moldear la silueta y mejorar la textura de la piel. Trabajo en abdomen, glúteos y piernas con alta demanda en el mercado.",
-    imagen: "/images/cursos/masaje-reductor-moldeador.jpg",
+    imagen: "/cursos/corporal/reductor.webp",
     href: "/cursos/corporales/masaje-reductor-moldeador",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -91,7 +91,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Cavitación, presoterapia, radiofrecuencia corporal y corrientes galvánicas. Equipos de vanguardia para tratamientos corporales profesionales.",
-    imagen: "/images/cursos/electroestetica-corporal.jpg",
+    imagen: "/cursos/corporal/electroestatica.webp",
     href: "/cursos/corporales/electroestetica-corporal",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -103,7 +103,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Tratamientos exclusivos con chocolate, café, arcillas y aceites esenciales. Ideal para spas y centros de bienestar premium. Alta rentabilidad.",
-    imagen: "/images/cursos/tecnicas-corporales-gourmet.jpg",
+    imagen: "/cursos/corporal/chocolat.webp",
     href: "/cursos/corporales/tecnicas-corporales-gourmet",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -115,7 +115,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Evaluación integral: composición corporal, medidas antropométricas e inesteticismos. Diseña planes de tratamiento personalizados y haz seguimiento de resultados.",
-    imagen: "/images/cursos/evaluacion-corporal.jpg",
+    imagen: "/cursos/corporal/evaluacion-corporal.webp",
     href: "/cursos/corporales/evaluacion-corporal",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -127,7 +127,7 @@ export const cursosCorporales: Curso[] = [
     categoria: "Curso Corporal",
     descripcion:
       "Masaje sueco, relajante y descontracturante para aliviar tensiones musculares y estrés. Técnicas con aceites aromáticos y ergonomía del terapeuta.",
-    imagen: "/images/cursos/masajes-relajantes-descontracturantes.jpg",
+    imagen: "/cursos/corporal/masaje-profesional.webp",
     href: "/cursos/corporales/masajes-relajantes-descontracturantes",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",

@@ -7,7 +7,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Técnicas de recuperación y cuidado postquirúrgico corporal. Protocolos de atención, drenaje linfático y manejo de pacientes tras cirugías estéticas.",
-    imagen: "/images/cursos/post-operatorio.jpg",
+    imagen: "/cursos/especialidades/post-operatorio.webp",
     href: "/cursos/especialidades/post-operatorio",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -19,7 +19,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Manejo de equipos de vanguardia para tratamientos faciales y corporales. Radiofrecuencia, ultrasonido, microcorrientes y protocolos de seguridad.",
-    imagen: "/images/cursos/electroestetica.jpg",
+    imagen: "/cursos/especialidades/electroestetica.webp",
     href: "/cursos/especialidades/electroestetica",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -31,7 +31,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Diseño, lifting, extensiones y técnicas avanzadas para cejas y pestañas. Domina las tendencias y protocolos de belleza ocular profesional.",
-    imagen: "/images/cursos/cejas-pestanas.jpg",
+    imagen: "/cursos/especialidades/cejas-pestanas.webp",
     href: "/cursos/especialidades/cejas-pestanas",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -43,7 +43,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Protocolos y técnicas para cuidado facial profesional: diagnóstico, limpieza profunda, tratamientos anti-age y aparatología facial avanzada.",
-    imagen: "/images/cursos/estetica-facial.jpg",
+    imagen: "/cursos/especialidades/estetica-facial.webp",
     href: "/cursos/especialidades/estetica-facial",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -55,7 +55,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Maderoterapia, protocolos reductores y relajantes, y aparatología corporal. Aprende tratamientos completos para mejorar la salud y apariencia del cuerpo.",
-    imagen: "/images/cursos/estetica-corporal.jpg",
+    imagen: "/cursos/especialidades/estetica-corporal.webp",
     href: "/cursos/especialidades/estetica-corporal",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -67,7 +67,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Técnica de microagujas para rejuvenecimiento facial y corporal. Protocolos de seguridad, anti-age, aparatología y cuidados post-procedimiento.",
-    imagen: "/images/cursos/microneedling.jpg",
+    imagen: "/cursos/especialidades/microneedling.webp",
     href: "/cursos/especialidades/microneedling",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -79,7 +79,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Formulación y aplicación de productos cosméticos. Bases químicas, protocolos de seguridad, prácticas en laboratorio y normativa vigente.",
-    imagen: "/images/cursos/quimica-cosmetica.jpg",
+    imagen: "/cursos/especialidades/quimica-cosmetica.webp",
     href: "/cursos/especialidades/quimica-cosmetica",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -91,7 +91,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Maquillaje y cuidado ocular profesional. Embellecimiento, pigmentación, protocolos de seguridad y las últimas tendencias en técnicas oculares.",
-    imagen: "/images/cursos/tecnicas-ojos.jpg",
+    imagen: "/cursos/especialidades/tecnicas-ojos.webp",
     href: "/cursos/especialidades/tecnicas-ojos",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -103,7 +103,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Técnicas para restaurar y fortalecer el cabello. Protocolos de reconstrucción, productos capilares, masajes y prácticas con modelos reales.",
-    imagen: "/images/cursos/reconstruccion-capilar.jpg",
+    imagen: "/cursos/especialidades/reconstruccion-capilar.webp",
     href: "/cursos/especialidades/reconstruccion-capilar",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -115,7 +115,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Métodos y técnicas avanzadas de depilación: cera, láser y técnicas modernas. Protocolos, seguridad, cuidados post-procedimiento y prácticas en modelos.",
-    imagen: "/images/cursos/depilacion.jpg",
+    imagen: "/cursos/especialidades/depilacion.webp",
     href: "/cursos/especialidades/depilacion",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -127,7 +127,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Técnica de pigmentación permanente labial. Diseño, selección de color, aplicación y cuidados post-procedimiento para resultados naturales y duraderos.",
-    imagen: "/images/cursos/micropigmentacion-labial.jpg",
+    imagen: "/cursos/especialidades/micropigmentacion-labial.webp",
     href: "/cursos/especialidades/micropigmentacion-labial",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
@@ -139,7 +139,7 @@ export const cursosEspecialidades: Curso[] = [
     categoria: "Especialidad",
     descripcion:
       "Diseño, pigmentación y técnicas avanzadas para cejas perfectas. Mapeo, henna, tinte y tendencias actuales con prácticas en modelos reales.",
-    imagen: "/images/cursos/tecnicas-cejas.jpg",
+    imagen: "/cursos/especialidades/tecnicas-cejas.webp",
     href: "/cursos/especialidades/tecnicas-cejas",
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
