@@ -12,6 +12,7 @@ export const cursosMaquillaje: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Descuentos con cupos limitados",
+    whatsapp: "59164185009",
   },
   {
     id: "maquillaje-correctivo",
@@ -24,6 +25,7 @@ export const cursosMaquillaje: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Descuentos con cupos limitados",
+    whatsapp: "59164185009",
   },
   {
     id: "maquillaje-efectos-especiales",
@@ -36,6 +38,7 @@ export const cursosMaquillaje: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Descuentos con cupos limitados",
+    whatsapp: "59164185009",
   },
   {
     id: "maquillaje-artistico",
@@ -48,6 +51,7 @@ export const cursosMaquillaje: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Descuentos con cupos limitados",
+    whatsapp: "59164185009",
   },
   {
     id: "maquillaje-editorial-fotografia",
@@ -60,5 +64,6 @@ export const cursosMaquillaje: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Descuentos con cupos limitados",
+    whatsapp: "59164185009",
   },
 ];

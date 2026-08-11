@@ -12,6 +12,7 @@ export const cursosCejasPestanas: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59164185009",
   },
   {
     id: "extension-pestanas",
@@ -24,6 +25,7 @@ export const cursosCejasPestanas: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59164185009",
   },
   {
     id: "lifting-cejas-pestanas",
@@ -36,6 +38,7 @@ export const cursosCejasPestanas: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59164185009",
   },
   {
     id: "diseno-cejas-tinte-henna",
@@ -48,5 +51,6 @@ export const cursosCejasPestanas: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59164185009",
   },
 ];

@@ -9,6 +9,7 @@ export interface Curso {
   modalidad?: string;
   badge?: string;
   precio?: string;
+  whatsapp?: string;
 }
 
 export interface CategoriaCurso {

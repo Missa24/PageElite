@@ -12,6 +12,7 @@ export const cursosCertificaciones: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59168040016",
   },
   {
     id: "cosmetologia-cosmiatria",
@@ -24,6 +25,7 @@ export const cursosCertificaciones: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59167112004",
   },
   {
     id: "estetica-corporal",
@@ -36,6 +38,7 @@ export const cursosCertificaciones: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "maquillaje-profesional",
@@ -48,5 +51,6 @@ export const cursosCertificaciones: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59164185009",
   },
 ];

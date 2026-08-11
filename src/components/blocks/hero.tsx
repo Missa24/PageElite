@@ -38,11 +38,7 @@ export const Hero = () => {
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4">
-            <Button size="lg" className="h-12 px-8" asChild>
-              <a href="#">
-                Empieza tu formación
-              </a>
-            </Button>
+
 
             <Button
               size="lg"
@@ -50,7 +46,7 @@ export const Hero = () => {
               className="h-12 gap-2 px-8"
               asChild
             >
-              <a href="#">
+              <a href="#cursos">
                 Explorar cursos
                 <ArrowRight className="size-4" />
               </a>

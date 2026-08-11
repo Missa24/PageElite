@@ -19,6 +19,8 @@ const cursos = [
     descripcion:
       "Programas certificados para impulsar tu perfil profesional.",
     enlace: "/cursos/certificaciones",
+    imagen: "/cursos/certificaciones.webp",
+    imagenAlt: "Cursos con certificaiones profesionales",
   },
   {
     numero: "02",
@@ -26,6 +28,8 @@ const cursos = [
     descripcion:
       "Cursos especializados para profesionales.",
     enlace: "/cursos/especialidades",
+    imagen: "/cursos/especialidades.webp",
+    imagenAlt: "Cursos con especialidades avanzadas",
   },
   {
     numero: "03",

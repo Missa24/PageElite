@@ -1,7 +1,6 @@
 import { Curso } from "./types";
-
-import { WhatsAppFloat } from "@/components/whatsapp-float";
-
+import { FaWhatsapp } from "react-icons/fa";
+import { Button } from "../ui/button";
 interface Props {
   curso: Curso;
 }
@@ -33,10 +32,23 @@ export function CourseDetail({ curso }: Props) {
               </p>
             </div>
             <div>
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-primary/90 text-black font-semibold rounded hover:bg-primary transition">
-                Inscribete
-              </a>
+              <Button
+                size="lg"
+                className="mt-4 bg-primary hover:bg-second"
+                asChild
+              >
+                <a
+                  href={`https://wa.me/${curso.whatsapp}?text=${encodeURIComponent(
+                    `Hola, estoy interesado/a en obtener más información sobre el curso de ${curso.titulo}. Quisiera conocer más detalles, precios y cómo puedo inscribirme. ¡Gracias!`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp className="mr-2 h-5 w-5" />
+                  Solicitar información
+                </a>
+              </Button>
+
             </div>
           </div>
         </div>

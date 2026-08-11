@@ -12,6 +12,7 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
     {
         id: "dermaplaning",
@@ -24,6 +25,7 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
     {
         id: "antiaging",
@@ -36,6 +38,7 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
     {
         id: "peelings-quimicos",
@@ -48,6 +51,7 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
     {
         id: "evaluacion-facial",
@@ -60,6 +64,7 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
     {
         id: "electroestetica-facial",
@@ -72,6 +77,7 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
     {
         id: "dermatopatias-faciales",
@@ -84,6 +90,7 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
     {
         id: "masofilaxia-facial",
@@ -96,6 +103,7 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
     {
         id: "limpiezas-faciales-avanzadas",
@@ -108,6 +116,7 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
     {
         id: "peeling-dermatopatias",
@@ -120,5 +129,6 @@ export const cursosFaciales: Curso[] = [
         modalidad: "Online & Presencial",
         badge: "Inscripciones Abiertas",
         precio: "Consultar precio",
+        whatsapp: "59167112004",
     },
 ];

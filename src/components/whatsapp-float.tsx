@@ -3,7 +3,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 export function WhatsAppFloat() {
-    const phone = "59170586532";
+    const phone = "59164152202";
     const message = encodeURIComponent(
         "Hola, me gustaría recibir información sobre los cursos de Elite Academy."
     );

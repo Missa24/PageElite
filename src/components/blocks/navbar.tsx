@@ -166,9 +166,9 @@ export const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Auth Buttons */}
         <div className="flex items-center gap-2.5">
           <ThemeToggle />
+          {/*           
           <a
             href="https://github.com/shadcnblocks/mainline-nextjs-template"
             className="text-muted-foreground hover:text-foreground flex items-center gap-2 transition-colors"
@@ -177,8 +177,7 @@ export const Navbar = () => {
             <span>Log in</span>
             <span className="sr-only">Iniciar sesión</span>
           </a>
-
-          {/* Hamburger Menu Button (Mobile Only) */}
+*/}
           <button
             className="text-muted-foreground relative flex size-8 lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

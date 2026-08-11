@@ -12,6 +12,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "electroestetica",
@@ -24,6 +25,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "cejas-pestanas",
@@ -36,6 +38,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59164185009",
   },
   {
     id: "estetica-facial",
@@ -48,6 +51,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59167112004",
   },
   {
     id: "estetica-corporal",
@@ -60,6 +64,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "microneedling",
@@ -72,6 +77,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59167112004",
   },
   {
     id: "quimica-cosmetica",
@@ -84,6 +90,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59168040016",
   },
   {
     id: "tecnicas-ojos",
@@ -96,6 +103,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59164185009",
   },
   {
     id: "reconstruccion-capilar",
@@ -108,6 +116,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59167112004",
   },
   {
     id: "depilacion",
@@ -120,6 +129,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59167112004",
   },
   {
     id: "micropigmentacion-labial",
@@ -132,6 +142,7 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59164185009",
   },
   {
     id: "tecnicas-cejas",
@@ -144,5 +155,6 @@ export const cursosEspecialidades: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59164185009",
   },
 ];

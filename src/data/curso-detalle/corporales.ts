@@ -12,6 +12,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "drenaje-linfatico-manual",
@@ -24,6 +25,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "taping-estetico-post-operatorio",
@@ -36,6 +38,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "maderoterapia",
@@ -48,6 +51,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "depilacion-cera",
@@ -60,6 +64,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "depilacion-intima",
@@ -72,6 +77,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "masaje-reductor-moldeador",
@@ -84,6 +90,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "electroestetica-corporal",
@@ -96,6 +103,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "tecnicas-corporales-gourmet",
@@ -108,6 +116,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "evaluacion-corporal",
@@ -120,6 +129,7 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
   {
     id: "masajes-relajantes-descontracturantes",
@@ -132,5 +142,6 @@ export const cursosCorporales: Curso[] = [
     modalidad: "Online & Presencial",
     badge: "Inscripciones Abiertas",
     precio: "Consultar precio",
+    whatsapp: "59163233775",
   },
 ];

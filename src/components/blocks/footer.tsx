@@ -50,10 +50,15 @@ export function Footer() {
 
         <div>
           <Button size="lg" className="mt-4" asChild>
-            <a href="#contacto">
+            <a
+              href="https://wa.me/59164152202?text=Hola%2C%20estoy%20interesado%2Fa%20en%20obtener%20m%C3%A1s%20informaci%C3%B3n.%20Vi%20su%20p%C3%A1gina%20web%20y%20quisiera%20conocer%20m%C3%A1s%20detalles%20sobre%20sus%20cursos%2C%20precios%20y%20c%C3%B3mo%20puedo%20inscribirme.%20%C2%A1Gracias%21"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Solicitar información
             </a>
           </Button>
+
         </div>
       </div>
 
