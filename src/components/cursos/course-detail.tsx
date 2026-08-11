@@ -36,6 +36,7 @@ export function CourseDetail({ curso }: Props) {
                 size="lg"
                 className="mt-4 bg-primary hover:bg-second"
                 asChild
+                disabled
               >
                 <a
                   href={`https://wa.me/${curso.whatsapp}?text=${encodeURIComponent(

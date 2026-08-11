@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Curso } from "./types";
 import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
 
 interface Props {
     curso: Curso;
@@ -62,15 +63,14 @@ export function CourseCard({
             </Link>
 
             <div className="px-6 pb-6 pt-4 border-t border-border/40 flex items-center justify-between gap-4">
-                <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md px-4 py-2 text-sm font-semibold text-primary-foreground bg-primary hover:bg-second transition-colors"
+                <Button
+                    type="button"
+                    disabled
+                    className="mt-4 bg-primary hover:bg-second disabled:cursor-not-allowed disabled:opacity-100"
                 >
                     <FaWhatsapp className="h-5 w-5" />
                     Inscribirme
-                </a>
+                </Button>
 
                 <Link
                     href={curso.href}
