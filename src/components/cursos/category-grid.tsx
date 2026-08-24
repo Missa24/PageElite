@@ -1,5 +1,5 @@
-import { CategoriaCurso } from "./types";
 import { CategoryCard } from "./category-card";
+import { CategoriaCurso } from "./types";
 
 interface Props {
     title: string;

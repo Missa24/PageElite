@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import { Facebook, Instagram, Music2 } from "lucide-react";
 
 export function FooterSummary() {

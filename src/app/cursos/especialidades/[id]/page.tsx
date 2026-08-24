@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+
 import { Background } from "@/components/background";
 import { CourseDetail } from "@/components/cursos/course-detail";
 import { cursosEspecialidades } from "@/data/curso-detalle/especialidades";

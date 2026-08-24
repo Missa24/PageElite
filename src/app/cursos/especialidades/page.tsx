@@ -1,5 +1,5 @@
-import { CourseGrid } from "@/components/cursos/course-grid";
 import { Background } from "@/components/background";
+import { CourseGrid } from "@/components/cursos/course-grid";
 import { cursosEspecialidades } from "@/data/curso-detalle/especialidades";
 
 export default function MaquillajePage() {

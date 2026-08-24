@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+
 import { Curso } from "./types";
-import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
+
+import { cn } from "@/lib/utils";
 
 interface Props {
     curso: Curso;
