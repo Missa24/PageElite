@@ -1,12 +1,4 @@
 "use client";
-{/*
--- features cambiar a cursos, desploega los mimso 7
--- sus rutas y navbar y footer
--- bloques opcional, AGREGAR un filtro 
--- pnpm run build "no podemos desplegar al servidor si tiene errores y notifica"
--- imagenes webp
--- en public, poner carpeta "cursos, y poner las imagenes" re
-*/}
 
 import { useState } from "react";
 
@@ -14,11 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { ChevronRight, Key } from "lucide-react";
-import { features } from "process";
+import { ChevronRight } from "lucide-react";
 
 import { ThemeToggle } from "@/components/theme-toggle";
-import { Button } from "@/components/ui/button";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -27,6 +18,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+
 import { cn } from "@/lib/utils";
 
 const ITEMS = [
@@ -97,6 +89,7 @@ const ITEMS = [
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
   const pathname = usePathname();
 
   return (
@@ -107,24 +100,27 @@ export const Navbar = () => {
       )}
     >
       <div className="flex items-center justify-between px-6 py-3">
+        {/* LOGO */}
         <Link href="/" className="flex shrink-0 items-center">
           <Image
             src="/logo.png"
-            alt="logo"
+            alt="Elite Academy"
             width={1368}
             height={1368}
-            className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain"
+            className="h-12 w-12 object-contain sm:h-14 sm:w-14 md:h-16 md:w-16"
           />
         </Link>
 
+        {/* MENÚ ESCRITORIO */}
         <NavigationMenu className="max-lg:hidden">
           <NavigationMenuList>
             {ITEMS.map((link) =>
               link.dropdownItems ? (
-                <NavigationMenuItem key={link.label} className="">
-                  <NavigationMenuTrigger className="data-[state=open]:bg-accent/50 bg-transparent! px-1.5">
+                <NavigationMenuItem key={link.label}>
+                  <NavigationMenuTrigger className="bg-transparent! px-1.5 data-[state=open]:bg-accent/50">
                     {link.label}
                   </NavigationMenuTrigger>
+
                   <NavigationMenuContent>
                     <ul className="w-[240px] space-y-2 p-2">
                       {link.dropdownItems.map((item) => (
@@ -132,15 +128,12 @@ export const Navbar = () => {
                           <NavigationMenuLink asChild>
                             <Link
                               href={item.href}
-                              className="group hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex items-center gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none"
+                              className="group flex items-center gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             >
                               <div className="space-y-1.5 transition-transform duration-300 group-hover:translate-x-1">
-                                <div className="text-sm leading-none font-medium">
+                                <div className="text-sm font-medium leading-none">
                                   {item.title}
                                 </div>
-                                {/* <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                                  {item.description}
-                                </p> */}
                               </div>
                             </Link>
                           </NavigationMenuLink>
@@ -150,110 +143,133 @@ export const Navbar = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               ) : (
-                <NavigationMenuItem key={link.label} className="">
+                <NavigationMenuItem key={link.label}>
                   <Link
                     href={link.href}
                     className={cn(
                       "relative bg-transparent px-1.5 text-sm font-medium transition-opacity hover:opacity-75",
-                      pathname === link.href && "text-muted-foreground",
+                      pathname === link.href &&
+                      "text-muted-foreground"
                     )}
                   >
                     {link.label}
                   </Link>
                 </NavigationMenuItem>
-              ),
+              )
             )}
           </NavigationMenuList>
         </NavigationMenu>
 
+        {/* ACCIONES */}
         <div className="flex items-center gap-2.5">
           <ThemeToggle />
-          {/*           
-          <a
-            href="https://github.com/shadcnblocks/mainline-nextjs-template"
-            className="text-muted-foreground hover:text-foreground flex items-center gap-2 transition-colors"
-          >
-            <Key className="size-4" />
-            <span>Log in</span>
-            <span className="sr-only">Iniciar sesión</span>
-          </a>
-*/}
+
+          {/* BOTÓN MENÚ MÓVIL */}
           <button
-            className="text-muted-foreground relative flex size-8 lg:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            type="button"
+            className="relative flex size-8 text-muted-foreground lg:hidden"
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            aria-label={
+              isMenuOpen ? "Cerrar menú principal" : "Abrir menú principal"
+            }
+            aria-expanded={isMenuOpen}
           >
-            <span className="sr-only">Open main menu</span>
-            <div className="absolute top-1/2 left-1/2 block w-[18px] -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute left-1/2 top-1/2 block w-[18px] -translate-x-1/2 -translate-y-1/2">
               <span
                 aria-hidden="true"
-                className={`absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out ${isMenuOpen ? "rotate-45" : "-translate-y-1.5"}`}
-              ></span>
+                className={cn(
+                  "absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out",
+                  isMenuOpen
+                    ? "rotate-45"
+                    : "-translate-y-1.5"
+                )}
+              />
+
               <span
                 aria-hidden="true"
-                className={`absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out ${isMenuOpen ? "opacity-0" : ""}`}
-              ></span>
+                className={cn(
+                  "absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out",
+                  isMenuOpen && "opacity-0"
+                )}
+              />
+
               <span
                 aria-hidden="true"
-                className={`absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out ${isMenuOpen ? "-rotate-45" : "translate-y-1.5"}`}
-              ></span>
+                className={cn(
+                  "absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out",
+                  isMenuOpen
+                    ? "-rotate-45"
+                    : "translate-y-1.5"
+                )}
+              />
             </div>
           </button>
         </div>
       </div>
 
+      {/* MENÚ MÓVIL */}
       <div
         className={cn(
-          "bg-background fixed inset-x-0 top-[calc(100%+1rem)] flex flex-col rounded-2xl border p-6 transition-all duration-300 ease-in-out lg:hidden",
+          "fixed inset-x-0 top-[calc(100%+1rem)] flex flex-col rounded-2xl border bg-background p-6 transition-all duration-300 ease-in-out lg:hidden",
           isMenuOpen
             ? "visible translate-y-0 opacity-100"
-            : "invisible -translate-y-4 opacity-0",
+            : "invisible -translate-y-4 opacity-0"
         )}
       >
-        <nav className="divide-border flex flex-1 flex-col divide-y">
+        <nav className="flex flex-1 flex-col divide-y divide-border">
           {ITEMS.map((link) =>
             link.dropdownItems ? (
-              <div key={link.label} className="py-4 first:pt-0 last:pb-0">
+              <div
+                key={link.label}
+                className="py-4 first:pt-0 last:pb-0"
+              >
                 <button
+                  type="button"
                   onClick={() =>
                     setOpenDropdown(
-                      openDropdown === link.label ? null : link.label,
+                      openDropdown === link.label
+                        ? null
+                        : link.label
                     )
                   }
-                  className="text-primary flex w-full items-center justify-between text-base font-medium"
+                  className="flex w-full items-center justify-between text-base font-medium text-primary"
                 >
                   {link.label}
+
                   <ChevronRight
                     className={cn(
                       "size-4 transition-transform duration-200",
-                      openDropdown === link.label ? "rotate-90" : "",
+                      openDropdown === link.label &&
+                      "rotate-90"
                     )}
                   />
                 </button>
+
                 <div
                   className={cn(
                     "overflow-hidden transition-all duration-300",
                     openDropdown === link.label
                       ? "mt-4 max-h-[1000px] opacity-100"
-                      : "max-h-0 opacity-0",
+                      : "max-h-0 opacity-0"
                   )}
                 >
-                  <div className="bg-muted/50 space-y-3 rounded-lg p-4">
+                  <div className="space-y-3 rounded-lg bg-muted/50 p-4">
                     {link.dropdownItems.map((item) => (
                       <Link
                         key={item.title}
                         href={item.href}
-                        className="group hover:bg-accent block rounded-md p-2 transition-colors"
+                        className="group block rounded-md p-2 transition-colors hover:bg-accent"
                         onClick={() => {
                           setIsMenuOpen(false);
                           setOpenDropdown(null);
                         }}
                       >
                         <div className="transition-transform duration-200 group-hover:translate-x-1">
-                          <div className="text-primary font-medium">
+                          <div className="font-medium text-primary">
                             {item.title}
                           </div>
 
-                          <p className="text-muted-foreground mt-1 text-sm">
+                          <p className="mt-1 text-sm text-muted-foreground">
                             {item.description}
                           </p>
                         </div>
@@ -267,14 +283,18 @@ export const Navbar = () => {
                 key={link.label}
                 href={link.href}
                 className={cn(
-                  "text-primary hover:text-primary/80 py-4 text-base font-medium transition-colors first:pt-0 last:pb-0",
-                  pathname === link.href && "text-muted-foreground",
+                  "py-4 text-base font-medium text-primary transition-colors first:pt-0 last:pb-0 hover:text-primary/80",
+                  pathname === link.href &&
+                  "text-muted-foreground"
                 )}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  setOpenDropdown(null);
+                }}
               >
                 {link.label}
               </Link>
-            ),
+            )
           )}
         </nav>
       </div>

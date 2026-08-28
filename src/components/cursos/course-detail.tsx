@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import Image from "next/image";
 
->>>>>>> 8fb012653b388d3cee46162f2dbd80333097efea
 import { FaWhatsapp } from "react-icons/fa";
 
 import { Curso } from "./types";

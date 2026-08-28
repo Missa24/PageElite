@@ -14,7 +14,7 @@ const Page = () => {
         headerTag="h1"
       />
       <DashedLine className="mx-auto max-w-xl" />
-      <Docentes dashedLineClassName="hidden" />
+      <Docentes />
     </Background>
   );
 };

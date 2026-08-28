@@ -1,13 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-<<<<<<< HEAD
-
-import Image from "next/image";
-
-import { cn } from "@/lib/utils";
-=======
->>>>>>> 8fb012653b388d3cee46162f2dbd80333097efea
 
 import Image from "next/image";
 

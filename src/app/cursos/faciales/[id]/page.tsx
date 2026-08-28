@@ -14,12 +14,6 @@ export default async function Page({
   const curso = cursosFaciales.find(
     (curso) => curso.id === id
   );
-<<<<<<< HEAD
-
-  return (
-    <Background>
-      <CourseDetail curso={curso!} />
-=======
 
   if (!curso) {
     notFound();
@@ -28,7 +22,6 @@ export default async function Page({
   return (
     <Background>
       <CourseDetail curso={curso} />
->>>>>>> 8fb012653b388d3cee46162f2dbd80333097efea
     </Background>
   );
 }
