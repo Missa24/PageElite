@@ -40,43 +40,74 @@ export const ContactForm = () => {
 
         Mensaje:
         ${data.message}
-          `);
+      `);
 
     //const correo = "elite.academy.bo@gmail.com"
     window.location.href = `mailto:missaelapaza@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
-    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+    <form
+      onSubmit={form.handleSubmit(onSubmit)}
+      className="space-y-6"
+    >
       <div className="grid gap-6 md:grid-cols-2">
         <div className="space-y-2">
-          <label className="text-sm font-medium">
+          <label
+            htmlFor="name"
+            className="text-sm font-medium"
+          >
             Nombre completo
           </label>
+
           <Input
+            id="name"
             placeholder="Ej. María López"
             className="h-12 rounded-xl"
+            aria-invalid={!!form.formState.errors.name}
+            aria-describedby={
+              form.formState.errors.name ? "name-error" : undefined
+            }
             {...form.register("name")}
           />
+
           {form.formState.errors.name && (
-            <p className="text-sm text-destructive">
+            <p
+              id="name-error"
+              className="text-sm text-destructive"
+              role="alert"
+            >
               {form.formState.errors.name.message}
             </p>
           )}
         </div>
 
         <div className="space-y-2">
-          <label className="text-sm font-medium">
+          <label
+            htmlFor="email"
+            className="text-sm font-medium"
+          >
             Correo electrónico
           </label>
+
           <Input
+            id="email"
             type="email"
             placeholder="correo@gmail.com"
             className="h-12 rounded-xl"
+            aria-invalid={!!form.formState.errors.email}
+            aria-describedby={
+              form.formState.errors.email ? "email-error" : undefined
+            }
             {...form.register("email")}
           />
+
           {form.formState.errors.email && (
-            <p className="text-sm text-destructive">
+            <p
+              id="email-error"
+              className="text-sm text-destructive"
+              role="alert"
+            >
               {form.formState.errors.email.message}
             </p>
           )}
@@ -84,33 +115,61 @@ export const ContactForm = () => {
       </div>
 
       <div className="space-y-2">
-        <label className="text-sm font-medium">
+        <label
+          htmlFor="phone"
+          className="text-sm font-medium"
+        >
           Teléfono
         </label>
+
         <Input
+          id="phone"
           placeholder="+51 999 999 999"
           className="h-12 rounded-xl"
+          aria-invalid={!!form.formState.errors.phone}
+          aria-describedby={
+            form.formState.errors.phone ? "phone-error" : undefined
+          }
           {...form.register("phone")}
         />
+
         {form.formState.errors.phone && (
-          <p className="text-sm text-destructive">
+          <p
+            id="phone-error"
+            className="text-sm text-destructive"
+            role="alert"
+          >
             {form.formState.errors.phone.message}
           </p>
         )}
       </div>
 
       <div className="space-y-2">
-        <label className="text-sm font-medium">
+        <label
+          htmlFor="message"
+          className="text-sm font-medium"
+        >
           Mensaje
         </label>
+
         <Textarea
+          id="message"
           placeholder="Cuéntanos qué programa te interesa..."
           rows={5}
           className="resize-none rounded-xl"
+          aria-invalid={!!form.formState.errors.message}
+          aria-describedby={
+            form.formState.errors.message ? "message-error" : undefined
+          }
           {...form.register("message")}
         />
+
         {form.formState.errors.message && (
-          <p className="text-sm text-destructive">
+          <p
+            id="message-error"
+            className="text-sm text-destructive"
+            role="alert"
+          >
             {form.formState.errors.message.message}
           </p>
         )}

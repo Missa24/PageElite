@@ -24,18 +24,15 @@ export const metadata: Metadata = {
   ],
 };
 
-
 export default function Home() {
   return (
-    <>
-      <Background className="">
-        <Hero />
-        <Features />
-        <Cursos />
-        <Docentes />
-        <Gallery />
-        <FAQ />
-      </Background>
-    </>
+    <Background>
+      <Hero />
+      <Features />
+      <Cursos />
+      <Docentes />
+      <Gallery />
+      <FAQ />
+    </Background>
   );
 }

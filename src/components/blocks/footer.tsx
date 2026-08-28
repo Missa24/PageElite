@@ -5,7 +5,10 @@ import { Facebook, Instagram, Music2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8fb012653b388d3cee46162f2dbd80333097efea
 export function Footer() {
   const navigation = [
     { name: "Inicio", href: "/" },

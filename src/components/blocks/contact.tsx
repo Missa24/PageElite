@@ -3,13 +3,13 @@ import React from "react";
 import Link from "next/link";
 
 import {
+  Clock,
   Facebook,
   Instagram,
-  MapPin,
-  Phone,
   Mail,
-  Clock,
+  MapPin,
   Music2,
+  Phone,
 } from "lucide-react";
 import { Metadata } from "next";
 
@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     "formación profesional belleza",
   ],
 };
-
 
 const contactInfo = [
   {
@@ -127,15 +126,14 @@ export default function Contact() {
         </h1>
 
         <p className="mt-4 text-center text-muted-foreground">
-          Estamos listos para ayudarte a iniciar tu formación profesional en belleza.
+          Estamos listos para ayudarte a iniciar tu formación profesional en
+          belleza.
         </p>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {contactInfo.map((info) => (
             <div key={info.title}>
-              <h2 className="font-medium">
-                {info.title}
-              </h2>
+              <h2 className="font-medium">{info.title}</h2>
               {info.content}
             </div>
           ))}
@@ -159,6 +157,7 @@ export default function Contact() {
 
             <div className="overflow-hidden rounded-2xl border">
               <iframe
+                title="Ubicación de Elite Academy en Google Maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.560692873878!2d-68.13971492508631!3d-16.497767584245548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f212347715971%3A0xfb39d76e0a9d6ada!2sELITE%20ACADEMY!5e0!3m2!1sen!2sbo!4v1786453734591!5m2!1sen!2sbo"
                 width="100%"
                 height="100%"

@@ -1,11 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
 
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
+=======
+>>>>>>> 8fb012653b388d3cee46162f2dbd80333097efea
 
+import Image from "next/image";
+
+import { cn } from "@/lib/utils";
 
 const images = [
   "/galeria/1.webp",
@@ -33,9 +39,7 @@ const images = [
   "/galeria/23.webp",
 ];
 
-
 export function Gallery() {
-
   const [page, setPage] = useState(0);
 
   useEffect(() => {
@@ -46,30 +50,31 @@ export function Gallery() {
           : prev + 1
       );
     }, 20000);
+
     return () => clearInterval(timer);
   }, []);
-
-
 
   const currentImages = images.slice(
     page * 6,
     page * 6 + 6
   );
 
-
   return (
     <section className="py-24 lg:py-32">
       <div className="container">
-        <h2 className="
-          mb-12
-          text-center
-          text-3xl
-          font-semibold
-          tracking-tight
-          md:text-5xl
-        ">
+        <h2
+          className="
+            mb-12
+            text-center
+            text-3xl
+            font-semibold
+            tracking-tight
+            md:text-5xl
+          "
+        >
           Nuestra Galería
         </h2>
+
         <div
           className="
             grid
@@ -85,46 +90,36 @@ export function Gallery() {
               lg:row-span-2
             "
           />
+
           <GalleryItem
             src={currentImages[1]}
-            className="
-              lg:col-span-3
-            "
+            className="lg:col-span-3"
           />
+
           <GalleryItem
             src={currentImages[2]}
-            className="
-              lg:col-span-3
-            "
+            className="lg:col-span-3"
           />
+
           <GalleryItem
             src={currentImages[3]}
-            className="
-              lg:col-span-6
-            "
+            className="lg:col-span-6"
           />
+
           <GalleryItem
             src={currentImages[4]}
-            className="
-              lg:col-span-6
-            "
+            className="lg:col-span-6"
           />
+
           <GalleryItem
             src={currentImages[5]}
-            className="
-              lg:col-span-6
-            "
+            className="lg:col-span-6"
           />
-
         </div>
-
       </div>
-
     </section>
   );
 }
-
-
 
 function GalleryItem({
   src,
@@ -133,9 +128,7 @@ function GalleryItem({
   src: string;
   className?: string;
 }) {
-
   return (
-
     <div
       className={cn(
         `
