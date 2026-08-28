@@ -9,7 +9,6 @@ import { usePathname } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 
 import { ThemeToggle } from "@/components/theme-toggle";
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -18,7 +17,6 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-
 import { cn } from "@/lib/utils";
 
 const ITEMS = [
