@@ -4,34 +4,44 @@ import { Background } from "@/components/background";
 import { Cursos } from "@/components/blocks/course";
 import { Docentes } from "@/components/blocks/docente";
 import { FAQ } from "@/components/blocks/faq";
-import { Features } from "@/components/blocks/features";
 import { Gallery } from "@/components/blocks/gallery";
 import { Hero } from "@/components/blocks/hero";
+import { FeaturedCourses } from "@/components/cursos/featured-courses";
+import { FeaturesStickyScroll } from "@/components/blocks/features-sticky-scroll";
+import { CategoryShowcase } from "@/components/categorias/category-showcase";
+import { TestimonialShowcase } from "@/components/testimonio/testimonial-showcase";
+import { InternationalCommunity } from "@/components/blocks/international-community";
+import { CommunityScrollStory } from "@/components/blocks/community-scroll-story";
+import { GoalsScrollSection } from "@/components/blocks/goals-scroll-section";
+import { InteractiveCta } from "@/components/blocks/interactive-cta";
 
 export const metadata: Metadata = {
-  title: "Elite Academy | Academia de Cosmetología y Estética en Bolivia",
+  title: "ELITE Academy | Aprende. Crea. Evoluciona.",
   description:
-    "Elite Academy Bolivia forma profesionales en cosmetología, estética facial, estética corporal y maquillaje con resolución ministerial.",
-  keywords: [
-    "Elite Academy Bolivia",
-    "academia de belleza Bolivia",
-    "cosmetología Bolivia",
-    "cursos de estética Bolivia",
-    "cursos de maquillaje Bolivia",
-    "estética facial profesional",
-    "estética corporal profesional",
-    "resolución ministerial Bolivia",
-  ],
+    "Aprende nuevas habilidades con cursos prácticos y creados para llevar el conocimiento a la acción.",
 };
 
 export default function Home() {
   return (
     <Background>
       <Hero />
-      <Features />
-      <Cursos />
-      <Docentes />
-      <Gallery />
+
+      <FeaturedCourses />
+
+      <InternationalCommunity />
+
+      <TestimonialShowcase />
+
+      <FeaturesStickyScroll />
+
+      <CategoryShowcase />
+
+      <CommunityScrollStory />
+
+      <GoalsScrollSection />
+
+      <InteractiveCta />
+
       <FAQ />
     </Background>
   );

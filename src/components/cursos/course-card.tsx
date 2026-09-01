@@ -1,84 +1,172 @@
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
+import { Play } from "lucide-react";
 
-import { ArrowRight } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
-
-import { Curso } from "./types";
-import { Button } from "../ui/button";
-
+import { Curso } from "@/features/cursos/schemas/curso.schema";
 import { cn } from "@/lib/utils";
 
-interface Props {
+type CourseCardProps = {
     curso: Curso;
-    className?: string;
-}
+    index?: number;
+    mobile?: boolean;
+};
 
-export function CourseCard({
+const CARD_POSITIONS = [
+    {
+        position:
+            "lg:absolute lg:left-[1%] lg:z-10 lg:w-[270px] xl:left-[1%] xl:w-[300px]",
+        transform:
+            "lg:-rotate-2 lg:translate-y-5 lg:scale-[0.94]",
+    },
+    {
+        position:
+            "lg:absolute lg:left-[22%] lg:z-20 lg:w-[290px] xl:left-[21%] xl:w-[320px]",
+        transform:
+            "lg:-rotate-1 lg:translate-y-1 lg:scale-[0.98]",
+    },
+    {
+        position:
+            "lg:absolute lg:left-1/2 lg:z-30 lg:w-[320px] lg:-translate-x-1/2 xl:w-[350px]",
+        transform:
+            "lg:rotate-0 lg:-translate-y-3 lg:scale-[1.02]",
+    },
+    {
+        position:
+            "lg:absolute lg:right-[22%] lg:z-20 lg:w-[290px] xl:right-[21%] xl:w-[320px]",
+        transform:
+            "lg:rotate-1 lg:translate-y-1 lg:scale-[0.98]",
+    },
+    {
+        position:
+            "lg:absolute lg:right-[1%] lg:z-10 lg:w-[270px] xl:right-[1%] xl:w-[300px]",
+        transform:
+            "lg:rotate-2 lg:translate-y-5 lg:scale-[0.94]",
+    },
+];
+
+export const CourseCard = ({
     curso,
-    className,
-}: Props) {
+    index = 0,
+    mobile = false,
+}: CourseCardProps) => {
+    const position =
+        CARD_POSITIONS[index] ?? CARD_POSITIONS[2];
+
+    const imagen =
+        curso.rutaPortada?.trim() ||
+        "/cursos/curso-default.webp";
+
+    const esRemota =
+        imagen.startsWith("http://") ||
+        imagen.startsWith("https://");
+
     return (
-        <div
+        <article
             className={cn(
-                "group overflow-hidden border bg-card transition-all duration-300 ease-in-out",
-                "border-border/60 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5",
-                className
+                "group w-full transition-all duration-500 ease-out",
+                !mobile && position.position,
+                !mobile && position.transform,
+                !mobile &&
+                "hover:z-50 hover:-translate-y-5 hover:rotate-0 hover:scale-[1.03]"
             )}
         >
-            <Link href={curso.href} className="block space-y-6">
-                <div className="relative aspect-[16/10] overflow-hidden bg-muted">
+            <Link
+                href={`/cursos/${curso.categoria?.slug}/${curso.id}`}
+                className="block"
+            >
+                <div
+                    className={cn(
+                        "relative h-[330px] overflow-hidden rounded-[1.75rem]",
+                        "border border-border/50 bg-card",
+                        "shadow-[0_18px_45px_-20px_rgba(0,0,0,0.45)]",
+                        "transition-all duration-500 ease-out",
+                        "sm:h-[345px]",
+                        "lg:h-[355px]",
+                        "xl:h-[375px]",
+                        "group-hover:border-primary/40",
+                        "group-hover:shadow-[0_28px_65px_-22px_rgba(0,0,0,0.55)]"
+                    )}
+                >
                     <Image
-                        src={curso.imagen}
-                        alt={curso.titulo}
+                        src={imagen}
+                        alt={curso.nombre}
                         fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover transition duration-700 group-hover:scale-[1.02]"
-                        priority={false}
+                        unoptimized={esRemota}
+                        sizes="
+                            (max-width: 640px) 80vw,
+                            (max-width: 1024px) 48vw,
+                            350px
+                        "
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
 
-                <div className="flex min-h-[240px] flex-col justify-between px-6 pb-6">
-                    <div className="space-y-4">
-                        <p className="text-xs font-semibold uppercase tracking-wider text-primary/80">
-                            {curso.categoria}
-                        </p>
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10" />
 
-                        <div>
-                            <h3 className="line-clamp-2 text-xl font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-primary">
-                                {curso.titulo}
+                    <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/25 to-transparent" />
+
+                    <div
+                        className={cn(
+                            "absolute right-4 top-4",
+                            "flex size-10 items-center justify-center",
+                            "rounded-full border border-white/20",
+                            "bg-black/30 text-white backdrop-blur-xl",
+                            "transition-all duration-300",
+                            "group-hover:scale-110",
+                            "group-hover:border-primary/60",
+                            "group-hover:bg-primary",
+                            "group-hover:text-primary-foreground"
+                        )}
+                    >
+                        <Play
+                            className="ml-0.5 size-4 fill-current"
+                            strokeWidth={1.5}
+                        />
+                    </div>
+
+                    <div className="absolute inset-x-0 bottom-0 flex justify-center p-5">
+                        <div className="w-full max-w-[260px] px-3 text-center">
+                            {curso.categoria?.nombre && (
+                                <span
+                                    className={cn(
+                                        "mb-3 inline-flex",
+                                        "rounded-full border border-white/10",
+                                        "bg-primary/90 px-3 py-1",
+                                        "text-[10px] font-semibold uppercase",
+                                        "tracking-[0.13em]",
+                                        "text-primary-foreground",
+                                        "backdrop-blur-md"
+                                    )}
+                                >
+                                    {curso.categoria.nombre}
+                                </span>
+                            )}
+
+                            <h3
+                                className={cn(
+                                    "mx-auto font-bold",
+                                    "leading-[1.12]",
+                                    "tracking-[-0.025em]",
+                                    "text-white",
+                                    "drop-shadow-sm",
+                                    index === 2 && !mobile
+                                        ? "text-2xl xl:text-[26px]"
+                                        : "text-xl xl:text-[22px]"
+                                )}
+                            >
+                                {curso.nombre}
                             </h3>
 
-                            <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
-                                {curso.descripcion}
-                            </p>
+                            <div className="mx-auto mt-4 h-[2px] w-8 rounded-full bg-primary transition-all duration-300 group-hover:w-14" />
                         </div>
                     </div>
+
+                    <div className="pointer-events-none absolute inset-0 rounded-[1.75rem] ring-1 ring-inset ring-white/10" />
                 </div>
             </Link>
-
-            <div className="flex items-center justify-between gap-4 border-t border-border/40 px-6 pb-6 pt-4">
-                <Button
-                    type="button"
-                    disabled
-                    className="mt-4 bg-primary hover:bg-primary disabled:cursor-not-allowed disabled:opacity-100"
-                >
-                    <FaWhatsapp className="h-5 w-5" />
-                    Inscribirme
-                </Button>
-
-                <Link
-                    href={curso.href}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold tracking-wide text-primary"
-                >
-                    Ver programa
-
-                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
-            </div>
-        </div>
+        </article>
     );
-}
+};

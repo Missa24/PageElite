@@ -8,35 +8,46 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
-const preguntas = [
+const FAQS = [
   {
-    pregunta: "¿Quiénes pueden estudiar en la academia?",
-    respuesta:
-      "Cualquier persona apasionada por la belleza, sin experiencia previa.",
+    question: "¿Qué es Élite Academy?",
+    answer:
+      "Élite Academy es una plataforma de formación donde puedes acceder a cursos, contenidos académicos y recursos diseñados para acompañar tu aprendizaje y desarrollo profesional.",
   },
   {
-    pregunta: "¿Los cursos incluyen materiales?",
-    respuesta: "Sí, todos nuestros cursos incluyen materiales y productos.",
+    question: "¿Cómo puedo acceder a mis cursos?",
+    answer:
+      "Una vez que estés registrado e inscrito en un curso, podrás iniciar sesión en la plataforma y encontrarlo dentro de la sección “Mis cursos”. Desde ahí podrás acceder a sus módulos, lecciones y recursos disponibles.",
   },
   {
-    pregunta: "¿Recibo certificado al finalizar?",
-    respuesta:
-      "Sí, obtendrá un certificado avalado por nuestra institución.",
+    question: "¿Puedo estudiar desde mi celular?",
+    answer:
+      "Sí. La plataforma está diseñada para adaptarse a computadoras, tablets y dispositivos móviles, permitiéndote continuar tu aprendizaje desde donde te encuentres.",
   },
   {
-    pregunta: "¿Las clases son presenciales u online?",
-    respuesta:
-      "Contamos con modalidad presencial, online y semipresencial.",
+    question: "¿Cómo están organizados los cursos?",
+    answer:
+      "Cada curso está organizado por módulos y lecciones para que puedas avanzar de manera clara y progresiva. Dependiendo del programa, también podrás encontrar recursos complementarios y actividades de aprendizaje.",
   },
   {
-    pregunta: "¿Puedo pagar en cuotas?",
-    respuesta:
-      "Sí, ofrecemos diferentes métodos de pago y cuotas sin interés.",
+    question: "¿Puedo continuar un curso donde lo dejé?",
+    answer:
+      "Sí. Desde tu cuenta puedes volver a ingresar a tus cursos y continuar revisando los contenidos disponibles de acuerdo con tu avance.",
   },
   {
-    pregunta: "¿Dónde están ubicados?",
-    respuesta:
-      "Estamos en el corazón de la ciudad, con fácil acceso y estacionamiento.",
+    question: "¿Recibiré un certificado?",
+    answer:
+      "Los cursos o programas que incluyen certificación permiten acceder al certificado correspondiente una vez que se hayan cumplido los requisitos académicos establecidos.",
+  },
+  {
+    question: "¿Dónde puedo encontrar mis certificados?",
+    answer:
+      "Cuando un certificado haya sido habilitado para tu cuenta, podrás encontrarlo en la sección “Mis certificados”, desde donde podrás consultarlo y descargarlo.",
+  },
+  {
+    question: "¿Qué hago si tengo problemas para ingresar a mi cuenta?",
+    answer:
+      "Si tienes dificultades para iniciar sesión o acceder a algún contenido, puedes comunicarte con el equipo de soporte de Élite Academy para recibir asistencia.",
   },
 ];
 
@@ -79,11 +90,11 @@ export const FAQ = ({
 
           <div className="text-start">
             <Accordion type="single" collapsible className="w-full">
-              {preguntas.map((item, i) => (
+              {FAQS.map((item, i) => (
                 <AccordionItem key={i} value={`${i}`}>
-                  <AccordionTrigger>{item.pregunta}</AccordionTrigger>
+                  <AccordionTrigger>{item.question}</AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    {item.respuesta}
+                    {item.answer}
                   </AccordionContent>
                 </AccordionItem>
               ))}

@@ -9,6 +9,7 @@ import { StyleGlideProvider } from "@/components/styleglide-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import { WhatsAppFloat } from "@/components/whatsapp-float";
 import "@/styles/globals.css";
+import { QueryProvider } from "@/providers/query-provider";
 
 
 const dmSans = localFont({
@@ -175,7 +176,9 @@ export default function RootLayout({
           <StyleGlideProvider />
           <Navbar />
           <main>
-            {children}
+            <QueryProvider>
+              {children}
+            </QueryProvider>
           </main>
           <WhatsAppFloat />
           <FooterSwitcher />
