@@ -1,6 +1,9 @@
 import Link from "next/link";
+
 import { ArrowRight } from "lucide-react";
+
 import { CategoryArtwork } from "./category-artwork";
+
 import { Categoria } from "@/features/categorias/schema/categoria.schema";
 import { cn } from "@/lib/utils";
 

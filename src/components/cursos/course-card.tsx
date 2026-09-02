@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+
 import { Play } from "lucide-react";
 
 import { Curso } from "@/features/cursos/schemas/curso.schema";

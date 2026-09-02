@@ -1,9 +1,10 @@
-import { api } from "@/lib/api/axios";
-
 import {
     modulosResponseSchema,
     type ModulosResponse,
 } from "../schemas/modulo.schema";
+
+import { api } from "@/lib/api/axios";
+
 
 export type GetModulosParams = {
     page?: number;

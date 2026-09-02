@@ -1,5 +1,6 @@
-import { Curso } from "@/features/cursos/schemas/curso.schema";
 import { CourseCard } from "./course-card";
+
+import { Curso } from "@/features/cursos/schemas/curso.schema";
 
 interface CourseGridProps {
     title: string;

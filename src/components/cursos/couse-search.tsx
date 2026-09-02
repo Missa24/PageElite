@@ -1,7 +1,9 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+
 import { useRouter } from "next/navigation";
+
 import { Search, ArrowRight } from "lucide-react";
 
 export const CourseSearch = () => {

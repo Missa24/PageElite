@@ -1,12 +1,14 @@
 "use client";
 
 import { useRef } from "react";
+
 import {
     ArrowLeft,
     ArrowRight,
 } from "lucide-react";
 
 import { TestimonialCard } from "./testimonial-card";
+
 import { TESTIMONIOS } from "@/features/testimonios/mocks/testimonio.mock";
 
 export const TestimonialShowcase = () => {

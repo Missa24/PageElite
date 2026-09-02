@@ -1,9 +1,10 @@
-import { api } from "@/lib/api/axios";
-
 import {
     leccionesResponseSchema,
     type LeccionesResponse,
 } from "../schemas/leccion.schema";
+
+import { api } from "@/lib/api/axios";
+
 
 export type GetLeccionesParams = {
     nombre?: string;

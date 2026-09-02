@@ -1,7 +1,9 @@
 "use client";
 
 import { useRef, useState } from "react";
+
 import Image from "next/image";
+
 import { Play } from "lucide-react";
 
 import { Testimonio } from "@/features/testimonios/types/testimonio";

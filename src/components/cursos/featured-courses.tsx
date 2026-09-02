@@ -1,4 +1,5 @@
 import { CourseCard } from "./course-card";
+
 import { getCursos } from "@/features/cursos/service/curso.service";
 
 export const FeaturedCourses = async () => {

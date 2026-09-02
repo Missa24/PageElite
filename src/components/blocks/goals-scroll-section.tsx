@@ -1,6 +1,6 @@
 "use client";
-
 import { useRef } from "react";
+
 import {
     motion,
     MotionValue,
@@ -205,12 +205,6 @@ export const GoalsScrollSection = () => {
         scrollYProgress,
         [0.05, 0.18],
         [45, 0]
-    );
-
-    const eyebrowOpacity = useTransform(
-        scrollYProgress,
-        [0.08, 0.18],
-        [0, 1]
     );
 
     return (

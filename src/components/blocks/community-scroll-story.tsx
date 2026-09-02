@@ -1,7 +1,9 @@
 "use client";
 
 import { useRef } from "react";
+
 import Image from "next/image";
+
 import {
     motion,
     useScroll,
@@ -227,7 +229,7 @@ export const CommunityScrollStory = () => {
                             </div>
 
                             {COMMUNITY_IMAGES.map(
-                                (imagen, index) => (
+                                (imagen) => (
                                     <motion.div
                                         key={imagen.src}
                                         initial={false}

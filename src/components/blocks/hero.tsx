@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { CourseSearch } from "@/components/cursos/couse-search";
+import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
 export const Hero = () => {
   const words = [

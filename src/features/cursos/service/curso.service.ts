@@ -1,9 +1,10 @@
-import { api } from "@/lib/api/axios";
-
 import {
     cursosResponseSchema,
     type CursosResponse,
 } from "../schemas/curso.schema";
+
+import { api } from "@/lib/api/axios";
+
 
 export type GetCursosParams = {
     page?: number;

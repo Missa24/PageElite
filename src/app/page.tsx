@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 
 import { Background } from "@/components/background";
-import { Cursos } from "@/components/blocks/course";
-import { Docentes } from "@/components/blocks/docente";
-import { FAQ } from "@/components/blocks/faq";
-import { Gallery } from "@/components/blocks/gallery";
-import { Hero } from "@/components/blocks/hero";
-import { FeaturedCourses } from "@/components/cursos/featured-courses";
-import { FeaturesStickyScroll } from "@/components/blocks/features-sticky-scroll";
-import { CategoryShowcase } from "@/components/categorias/category-showcase";
-import { TestimonialShowcase } from "@/components/testimonio/testimonial-showcase";
-import { InternationalCommunity } from "@/components/blocks/international-community";
 import { CommunityScrollStory } from "@/components/blocks/community-scroll-story";
+import { FAQ } from "@/components/blocks/faq";
+import { FeaturesStickyScroll } from "@/components/blocks/features-sticky-scroll";
 import { GoalsScrollSection } from "@/components/blocks/goals-scroll-section";
+import { Hero } from "@/components/blocks/hero";
 import { InteractiveCta } from "@/components/blocks/interactive-cta";
+import { InternationalCommunity } from "@/components/blocks/international-community";
+import { CategoryShowcase } from "@/components/categorias/category-showcase";
+import { FeaturedCourses } from "@/components/cursos/featured-courses";
+import { TestimonialShowcase } from "@/components/testimonio/testimonial-showcase";
 
 export const metadata: Metadata = {
   title: "ELITE Academy | Aprende. Crea. Evoluciona.",

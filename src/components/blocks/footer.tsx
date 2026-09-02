@@ -1,17 +1,47 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Facebook, Instagram, Music2 } from "lucide-react";
+import { ArrowUpRight, Facebook, Instagram, Music2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
   const navigation = [
-    { name: "Inicio", href: "/" },
-    { name: "¿Por qué elegirnos?", href: "/#porque" },
-    { name: "Docentes", href: "/#docentes" },
-    { name: "Preguntas frecuentes", href: "/#faq" },
-    { name: "Contáctanos", href: "/#cta" },
+    {
+      name: "Inicio",
+      href: "/",
+    },
+    {
+      name: "Explorar cursos",
+      href: "/#cursos",
+    },
+    {
+      name: "Áreas de aprendizaje",
+      href: "/#categorias",
+    },
+    {
+      name: "Nuestra comunidad",
+      href: "/#comunidad",
+    },
+    {
+      name: "Docentes",
+      href: "/#docentes",
+    },
+    {
+      name: "Preguntas frecuentes",
+      href: "/#faq",
+    },
+  ];
+
+  const platform = [
+    {
+      name: "Todos los cursos",
+      href: "/cursos",
+    },
+    {
+      name: "Iniciar sesión",
+      href: "/login",
+    },
   ];
 
   const social = [
@@ -33,91 +63,175 @@ export function Footer() {
   ];
 
   const legal = [
-    { name: "Política de privacidad", href: "/privacy" },
+    {
+      name: "Política de privacidad",
+      href: "/privacy",
+    },
   ];
 
   return (
-    <footer className="relative flex flex-col items-center gap-14 overflow-hidden pb-20 pt-28 lg:pt-32">
-      <div className="container z-10 space-y-3 text-center">
-        <h2 className="text-sm tracking-tight md:text-4xl lg:text-2xl">
-          Empieza hoy tu camino en la belleza profesional.
-        </h2>
+    <footer className="relative overflow-hidden border-t border-border">
+      <div className="relative z-10 px-5 pb-14 pt-16 sm:px-8 sm:pb-16 sm:pt-20 lg:px-[50px] lg:pb-20 lg:pt-24">
+        <div className="mx-auto max-w-[1800px]">
+          <div className="grid gap-12 border-b border-border pb-12 lg:grid-cols-[1.3fr_0.7fr] lg:items-end lg:gap-20 lg:pb-16">
+            <div className="max-w-4xl">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-primary sm:text-xs">
+                Aprende · Crea · Evoluciona
+              </p>
 
-        <p className="text-muted-foreground mx-auto max-w-xl leading-snug text-balance">
-          Forma parte de Elite Academy y desarrolla las habilidades que te
-          abrirán nuevas oportunidades en el mundo de la cosmetología y la
-          estética.
-        </p>
+              <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-[1] tracking-[-0.05em] text-foreground sm:text-4xl lg:text-5xl xl:text-6xl">
+                Tu siguiente aprendizaje puede comenzar hoy
+              </h2>
 
-        <div>
-          <Button size="lg" className="mt-4" asChild>
-            <a
-              href="https://wa.me/59164152202?text=Hola%2C%20estoy%20interesado%2Fa%20en%20obtener%20m%C3%A1s%20informaci%C3%B3n.%20Vi%20su%20p%C3%A1gina%20web%20y%20quisiera%20conocer%20m%C3%A1s%20detalles%20sobre%20sus%20cursos%2C%20precios%20y%20c%C3%B3mo%20puedo%20inscribirme.%20%C2%A1Gracias%21"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Solicitar información
-            </a>
-          </Button>
+              <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+                Explora nuevas áreas, desarrolla tus habilidades
+                y continúa construyendo tu camino profesional
+                junto a Élite Academy.
+              </p>
+            </div>
 
+            <div className="flex flex-col items-start gap-4 lg:items-end">
+              <Button
+                size="lg"
+                asChild
+                className="group rounded-full px-7"
+              >
+                <Link href="/cursos">
+                  Explorar cursos
+
+                  <ArrowUpRight className="ml-2 size-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                </Link>
+              </Button>
+
+              <a
+                href="https://wa.me/59164152202?text=Hola%2C%20estoy%20interesado%2Fa%20en%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20cursos%20de%20Elite%20Academy."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
+              >
+                ¿Necesitas orientación? Escríbenos
+              </a>
+            </div>
+          </div>
+
+          <div className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_0.8fr] lg:gap-12">
+            <div className="max-w-sm">
+              <Link
+                href="/"
+                className="inline-flex items-center"
+              >
+                <span className="text-xl font-bold tracking-[-0.04em] text-primary sm:text-2xl">
+                  ÉLITE ACADEMY
+                </span>
+              </Link>
+
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Una plataforma creada para acompañar tu
+                aprendizaje, fortalecer tus conocimientos y
+                ayudarte a avanzar hacia nuevas oportunidades.
+              </p>
+
+              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                Formación sin fronteras
+              </p>
+            </div>
+
+            <div>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                Explora
+              </p>
+
+              <ul className="space-y-3">
+                {navigation.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                Plataforma
+              </p>
+
+              <ul className="space-y-3">
+                {platform.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                Síguenos
+              </p>
+
+              <div className="flex items-center gap-3">
+                {social.map((item) => {
+                  const Icon = item.icon;
+
+                  return (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={item.name}
+                      className="flex size-10 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:bg-primary hover:text-primary-foreground"
+                    >
+                      <Icon className="size-4" />
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-4 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              © {new Date().getFullYear()} Élite Academy. Todos
+              los derechos reservados.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              {legal.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="transition-colors hover:text-foreground"
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <span>
+                La Paz · Bolivia
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <nav className="container z-10 flex flex-col items-center gap-6">
-        <ul className="flex flex-wrap items-center justify-center gap-6">
-          {navigation.map((item) => (
-            <li key={item.name}>
-              <Link
-                href={item.href}
-                className="font-medium transition-opacity hover:opacity-75"
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        <ul className="flex items-center justify-center gap-5">
-          {social.map((item) => {
-            const Icon = item.icon;
-
-            return (
-              <li key={item.name}>
-                <Link
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-foreground transition-colors"
-                  aria-label={item.name}
-                >
-                  <Icon className="size-5" />
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-
-        <ul className="flex flex-wrap items-center justify-center gap-6">
-          {legal.map((item) => (
-            <li key={item.name}>
-              <Link
-                href={item.href}
-                className="text-muted-foreground text-sm transition-opacity hover:opacity-75"
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
-      <div className="pointer-events-none absolute bottom-0 left-0 z-0 w-full translate-y-[25%] opacity-70">
+      <div className="pointer-events-none absolute bottom-0 left-0 z-0 w-full translate-y-[35%] opacity-40">
         <div className="relative w-full">
           <Image
             src="/footer2.svg"
             alt=""
-            width={1200}
-            height={200}
+            width={1600}
+            height={300}
             className="h-auto w-full"
           />
 

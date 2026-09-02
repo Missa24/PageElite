@@ -1,5 +1,3 @@
-import { BookOpen, GraduationCap } from "lucide-react";
-
 export const InternationalCommunity = () => {
     return (
         <section className="overflow-hidden py-10 sm:py-12 lg:py-14">

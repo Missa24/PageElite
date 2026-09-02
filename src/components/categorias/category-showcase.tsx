@@ -1,10 +1,13 @@
 "use client";
 
 import { useRef } from "react";
+
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { CategorySkeleton } from "./category-skeleton";
-import { useCategorias } from "@/features/categorias/hook/categoria.hook";
+
 import { CategoryCard } from "./category-card";
+import { CategorySkeleton } from "./category-skeleton";
+
+import { useCategorias } from "@/features/categorias/hook/categoria.hook";
 
 export const CategoryShowcase = () => {
     const scrollRef = useRef<HTMLDivElement | null>(null);

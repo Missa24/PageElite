@@ -1,6 +1,7 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
+
 import { getModulosByCurso, GetModulosParams } from "../service/modulo.service";
 
 export const useModulos = (
