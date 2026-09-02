@@ -6,6 +6,30 @@ export const moduloSchema = z.object({
     nombre: z.string(),
     orden: z.number(),
     estaPublicado: z.boolean(),
+    rutaImagen: z.string().nullable(),
+    descripcion: z.string(),
+});
+
+export const moduloCursoCategoriaSchema = z
+    .object({
+        id: z.string(),
+        nombre: z.string(),
+        slug: z.string(),
+    })
+    .nullable();
+
+export const moduloCursoSchema = z.object({
+    id: z.string(),
+    nombre: z.string(),
+    categoria: moduloCursoCategoriaSchema,
+});
+
+export const moduloDetalleSchema = moduloSchema.extend({
+    curso: moduloCursoSchema,
+    _count: z.object({
+        lecciones: z.number(),
+        inscripciones: z.number(),
+    }),
 });
 
 export const modulosMetaSchema = z.object({
@@ -21,4 +45,9 @@ export const modulosResponseSchema = z.object({
 });
 
 export type Modulo = z.infer<typeof moduloSchema>;
-export type ModulosResponse = z.infer<typeof modulosResponseSchema>;
+export type ModuloDetalle = z.infer<
+    typeof moduloDetalleSchema
+>;
+export type ModulosResponse = z.infer<
+    typeof modulosResponseSchema
+>;

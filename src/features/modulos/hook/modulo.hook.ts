@@ -2,7 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 
-import { getModulosByCurso, GetModulosParams } from "../service/modulo.service";
+import { getModuloById, getModulosByCurso, GetModulosParams } from "../service/modulo.service";
 
 export const useModulos = (
     cursoId: string,
@@ -14,5 +14,17 @@ export const useModulos = (
         queryFn: () => getModulosByCurso(cursoId, params),
 
         enabled: Boolean(cursoId),
+    });
+};
+
+export const useModulo = (moduloId: string) => {
+    return useQuery({
+        queryKey: [
+            "modulo",
+            moduloId,
+        ],
+        queryFn: () =>
+            getModuloById(moduloId),
+        enabled: Boolean(moduloId),
     });
 };

@@ -16,8 +16,8 @@ export const RotatingWord = ({
     words,
     className,
     typingSpeed = 75,
-    deletingSpeed = 45,
-    pauseTime = 1600,
+    deletingSpeed = 60,
+    pauseTime = 3200,
 }: RotatingWordProps) => {
     const [wordIndex, setWordIndex] = useState(0);
     const [text, setText] = useState("");
